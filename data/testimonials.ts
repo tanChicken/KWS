@@ -12,7 +12,7 @@ export const testimonials: Testimonial[] = [
     origin: "Lagos, Nigeria",
     rating: 5,
     tour: "The Ultimate Cherry Blossom Route",
-    text: "From the private blossom viewings to the hanok stays, every moment felt designed just for us. Jane DMC Korea turned a dream trip into something far beyond what we imagined.",
+    text: "From the private blossom viewings to the hanok stays, every moment felt designed just for us. KWS DMC Korea turned a dream trip into something far beyond what we imagined.",
   },
   {
     name: "Henrik Johansson",

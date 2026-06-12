@@ -30,7 +30,7 @@ export default function Footer() {
           <Link href="/" className="inline-block">
             <Image
               src="/assets/stitch/logo.png"
-              alt="Jane DMC Korea logo"
+              alt="KWS DMC Korea logo"
               width={160}
               height={64}
               className="h-16 w-auto object-contain brightness-0 invert"
@@ -56,7 +56,7 @@ export default function Footer() {
               <Icon name="play_circle" className="text-[20px]" />
             </a>
             <a
-              href="mailto:info@janedmckorea.com"
+              href="mailto:info@kwsdmckorea.com"
               aria-label="Email us"
               className="w-10 h-10 rounded-full border border-surface-variant/30 flex items-center justify-center text-surface-variant hover:text-secondary-fixed hover:border-secondary-fixed transition-colors"
             >
@@ -88,8 +88,8 @@ export default function Footer() {
 
       <div className="max-w-container mx-auto px-5 md:px-20 pb-10">
         <div className="pt-8 border-t border-on-primary/20 flex flex-col md:flex-row justify-between gap-4 text-label-caps uppercase tracking-[0.1em] font-bold text-surface-variant">
-          <p>© 2026 Jane DMC Korea. All rights reserved.</p>
-          <p>Seoul, South Korea · info@janedmckorea.com · +82 2 1234 5678</p>
+          <p>© 2026 KWS DMC Korea. All rights reserved.</p>
+          <p>Seoul, South Korea · info@kwsdmckorea.com · +82 2 1234 5678</p>
         </div>
       </div>
     </footer>

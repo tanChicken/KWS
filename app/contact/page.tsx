@@ -60,13 +60,13 @@ export default function ContactPage() {
                       href="mailto:hello@janedmckorea.com"
                       className="text-body-md text-on-surface-variant hover:text-secondary transition-colors block mb-1"
                     >
-                      hello@janedmckorea.com
+                      hello@janedoe.com
                     </a>
                     <a
-                      href="mailto:b2b@janedmckorea.com"
+                      href="mailto:b2b@janedoe.com"
                       className="text-body-md text-on-surface-variant hover:text-secondary transition-colors block"
                     >
-                      b2b@janedmckorea.com (Partnerships)
+                      b2b@janedoe.com (Partnerships)
                     </a>
                   </div>
                 </div>

@@ -18,11 +18,11 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   title: {
-    default: "Jane DMC Korea — Your Premier Gateway to South Korea",
-    template: "%s | Jane DMC Korea",
+    default: "KWS DMC Korea — Your Premier Gateway to South Korea",
+    template: "%s | KWS DMC Korea",
   },
   description:
-    "Jane DMC Korea is a premium Destination Management Company crafting bespoke leisure tours, MICE programs, wellness retreats, and VIP experiences across South Korea.",
+    "KWS DMC Korea is a premium Destination Management Company crafting bespoke leisure tours, MICE programs, wellness retreats, and VIP experiences across South Korea.",
 };
 
 export default function RootLayout({

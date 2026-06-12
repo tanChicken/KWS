@@ -225,7 +225,7 @@ export const highlandEscape = {
       name: "Daniel & Mia Chen",
       origin: "Singapore",
       rating: 5,
-      text: "The highlands were breathtaking and the pacing was perfect. Our guide's knowledge turned every stop into a story. We are already planning our return with Jane DMC Korea.",
+      text: "The highlands were breathtaking and the pacing was perfect. Our guide's knowledge turned every stop into a story. We are already planning our return with KWS DMC Korea.",
     },
     {
       name: "Sofia Almeida",

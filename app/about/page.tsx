@@ -8,7 +8,7 @@ import Button from "@/components/Button";
 export const metadata: Metadata = {
   title: "About Us",
   description:
-    "Jane DMC Korea is a premium Destination Management Company crafting bespoke journeys, exclusive access, and seamless travel across South Korea.",
+    "KWS DMC Korea is a premium Destination Management Company crafting bespoke journeys, exclusive access, and seamless travel across South Korea.",
 };
 
 const principles = [
@@ -66,7 +66,7 @@ export default function AboutPage() {
             <div className="lg:w-1/2 w-full space-y-8">
               <SectionHeader
                 eyebrow="Our Story"
-                title="Welcome to Jane DMC Korea"
+                title="Welcome to KWS DMC Korea"
               />
               <div className="space-y-6 text-on-surface-variant text-body-lg leading-relaxed -mt-10">
                 <p>

@@ -27,7 +27,7 @@ export default function Navbar() {
         <Link href="/" className="flex items-center h-full py-2" onClick={() => setMenuOpen(false)}>
           <Image
             src="/assets/stitch/logo.png"
-            alt="Jane DMC Korea logo"
+            alt="KWS DMC Korea logo"
             width={160}
             height={64}
             className="h-14 w-auto object-contain"
