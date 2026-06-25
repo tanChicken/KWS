@@ -41,7 +41,7 @@ export default function AboutPage() {
       <section className="relative w-full h-[70vh] min-h-[520px] flex items-center justify-center overflow-hidden">
         <Image
           src="/assets/stitch/about-hero.jpg"
-          alt="Traditional Korean palace against mist-covered mountains at dawn"
+          alt="Traditional Korean palace wall"
           fill
           priority
           sizes="100vw"
@@ -65,25 +65,18 @@ export default function AboutPage() {
           <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
             <div className="lg:w-1/2 w-full space-y-8">
               <SectionHeader
-                eyebrow="Our Story"
+                eyebrow="ABOUT US"
                 title="Welcome to KWS DMC Korea"
               />
               <div className="space-y-6 text-on-surface-variant text-body-lg leading-relaxed -mt-10">
                 <p>
-                  We are your trusted and reliable travel partner, dedicated to
-                  showcasing the authentic beauty, vibrant culture, and
-                  unparalleled hospitality of South Korea.
+                  Founded on 1 June 2026, KOREA DMC – KOREA WITH SUE (KWS) is a professional Destination Management Company (DMC) dedicated to delivering exceptional travel and event management services throughout Korea.
                 </p>
                 <p>
-                  Founded on a passion for excellence, we curate experiences
-                  that transcend the ordinary. Every itinerary is a
-                  masterpiece, crafted with meticulous attention to detail and
-                  a profound respect for our timeless heritage.
+                  Leveraging extensive industry expertise, strong local partnerships, and comprehensive destination knowledge, we provide customized solutions tailored to the unique objectives of our clients and partners. Our commitment to professionalism, operational excellence, and service quality enables us to deliver seamless experiences and successful outcomes across a wide range of travel and event programs.
                 </p>
                 <p>
-                  From individual travelers seeking once-in-a-lifetime moments
-                  to global agencies entrusting us with their most valued
-                  clients, we deliver Korea — the right way.
+                  At KWS, we strive to create lasting value through innovative planning, meticulous execution, and personalized service, ensuring that every project is managed to the highest standards.
                 </p>
               </div>
             </div>
@@ -108,105 +101,136 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Guiding principles */}
-      <section className="py-20 md:py-24 bg-surface-container-low border-y border-outline-variant/20">
-        <div className="max-w-container mx-auto px-5 md:px-20">
-          <SectionHeader
-            align="center"
-            title="Guiding Principles"
-            subtitle="The foundational values that elevate every journey we design."
-          />
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {principles.map((principle) => (
-              <div
-                key={principle.title}
-                className="group bg-surface-container-lowest p-8 rounded border border-primary/10 hover:border-secondary/30 transition-all duration-300 hover:shadow-card"
-              >
-                <div className="w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                  <Icon name={principle.icon} filled className="text-secondary" />
-                </div>
-                <h3 className="font-display text-headline-sm text-primary mb-3">
-                  {principle.title}
-                </h3>
-                <p className="text-body-md text-on-surface-variant leading-relaxed">
-                  {principle.text}
-                </p>
-              </div>
-            ))}
-          </div>
+      {/* Leadership Section (Replaces Guiding Principles) */}
+<section className="py-20 bg-surface">
+  <div className="max-w-container mx-auto px-gutter">
+    <div className="flex flex-col lg:flex-row gap-12 lg:gap-20 items-center">
+      
+      {/* Text Content */}
+      <div className="flex-1 space-y-6">
+        <h2 className="text-display-lg text-primary font-display">
+          Leadership
+        </h2>
+        <h3 className="text-headline-sm text-secondary">
+          Ms. Sue Kim, Chief Executive Officer
+        </h3>
+        
+        <div className="space-y-4 text-body-md text-on-surface">
+          <p>
+            KOREA DMC – KOREA WITH SUE (KWS) is led by Ms. Sue Kim, a highly respected tourism professional with more than 25 years of experience in the travel and hospitality industry.
+          </p>
+          <p>
+            Throughout her distinguished career, Ms. Kim has successfully designed and managed international MICE events, incentive programs, corporate meetings, educational tours, and luxury travel experiences for clients from around the world.
+          </p>
+          <p>
+            Her extensive industry expertise, strong supplier relationships, and unwavering commitment to service excellence have earned the trust and confidence of global partners and stakeholders.
+          </p>
+          <p>
+            Recognized for her professionalism, leadership, and dedication to quality, Ms. Kim brings a strategic and client-focused approach to every project. Her vision is to position KWS as a trusted and innovative destination management partner, delivering authentic Korean experiences and world-class travel solutions.
+          </p>
         </div>
-      </section>
+      </div>
+    </div>
+  </div>
+</section>
 
-      {/* Expertise bento grid */}
-      <section className="py-20 md:py-32 bg-background">
-        <div className="max-w-container mx-auto px-5 md:px-20">
-          <SectionHeader eyebrow="Our Services" title="Unrivaled Expertise" />
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:h-[600px]">
-            {/* Large feature: Curated Travel */}
-            <div className="md:col-span-2 relative rounded overflow-hidden group h-72 md:h-auto">
-              <Image
-                src="/assets/stitch/service-curated.jpg"
-                alt="Tranquil Korean landscape framed by traditional wooden architecture"
-                fill
-                sizes="(max-width: 768px) 100vw, 66vw"
-                className="object-cover transition-transform duration-700 group-hover:scale-105"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent" />
-              <div className="absolute bottom-0 left-0 p-8 text-on-primary">
-                <span className="text-label-caps uppercase tracking-[0.15em] font-bold text-secondary-fixed mb-2 block">
-                  01
-                </span>
-                <h3 className="font-display text-headline-sm mb-2">Curated Travel</h3>
-                <p className="text-body-md text-on-primary/80 max-w-md">
-                  Bespoke leisure itineraries designed for the discerning
-                  traveler, blending culture, luxury, and unseen locales.
-                </p>
-              </div>
-            </div>
+  {/* Our Expertise Section */}
+<section className="py-20 bg-surface">
+  <div className="max-w-container mx-auto px-gutter">
+    
+    {/* Section Header */}
+    <div className="text-center mb-16">
+      <h2 className="text-display-lg text-primary font-display">
+        Our Expertise
+      </h2>
+    </div>
 
-            <div className="flex flex-col gap-6 md:h-full">
-              {/* VIP & Concierge */}
-              <div className="flex-1 relative rounded overflow-hidden group bg-surface-container-low border border-primary/10 h-56 md:h-auto">
-                <Image
-                  src="/assets/stitch/service-vip.jpg"
-                  alt="Premium concierge welcome amenities on a gold tray"
-                  fill
-                  sizes="(max-width: 768px) 100vw, 33vw"
-                  className="object-cover transition-transform duration-700 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/30 to-transparent" />
-                <div className="absolute bottom-0 left-0 p-6 w-full">
-                  <span className="text-label-caps uppercase tracking-[0.15em] font-bold text-secondary-fixed mb-2 block">
-                    02
-                  </span>
-                  <h3 className="font-display text-headline-sm text-on-primary">
-                    VIP &amp; Concierge
-                  </h3>
-                </div>
-              </div>
+    {/* Cards Grid */}
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      
+      {/* Card 1: MICE Solutions */}
+      <div className="bg-white p-8 rounded-2xl shadow-soft border border-outline-variant hover:shadow-soft-lg transition-shadow duration-300 flex flex-col h-full">
+        <h3 className="text-headline-sm text-primary font-display mb-3">
+          MICE Solutions
+        </h3>
+        <p className="text-body-md text-on-surface">
+          Professional planning and management of meetings, incentives, conferences, and exhibitions.
+        </p>
+      </div>
 
-              {/* Corporate & MICE */}
-              <div className="flex-1 relative rounded overflow-hidden group bg-primary h-56 md:h-auto">
-                <div className="absolute inset-0 bg-gradient-to-tr from-primary to-primary-container" />
-                <div className="absolute inset-0 p-6 flex flex-col justify-end text-on-primary">
-                  <span className="text-label-caps uppercase tracking-[0.15em] font-bold text-secondary-fixed mb-2 block">
-                    03
-                  </span>
-                  <h3 className="font-display text-headline-sm mb-2">
-                    Corporate &amp; MICE
-                  </h3>
-                  <div className="mt-4 flex justify-between items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <span className="text-body-md text-on-primary/70">Explore</span>
-                    <Icon name="arrow_forward" className="text-secondary-fixed" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Card 2: Corporate Events */}
+      <div className="bg-white p-8 rounded-2xl shadow-soft border border-outline-variant hover:shadow-soft-lg transition-shadow duration-300 flex flex-col h-full">
+        <h3 className="text-headline-sm text-primary font-display mb-3">
+          Corporate Events
+        </h3>
+        <p className="text-body-md text-on-surface">
+          Comprehensive event management services for corporate meetings, executive programs, and business events.
+        </p>
+      </div>
 
-      <StatsSection />
+      {/* Card 3: Incentive Travel */}
+      <div className="bg-white p-8 rounded-2xl shadow-soft border border-outline-variant hover:shadow-soft-lg transition-shadow duration-300 flex flex-col h-full">
+        <h3 className="text-headline-sm text-primary font-display mb-3">
+          Incentive Travel
+        </h3>
+        <p className="text-body-md text-on-surface">
+          Customized travel experiences designed to motivate, reward, and inspire participants.
+        </p>
+      </div>
+
+      {/* Card 4: Educational Programs */}
+      <div className="bg-white p-8 rounded-2xl shadow-soft border border-outline-variant hover:shadow-soft-lg transition-shadow duration-300 flex flex-col h-full">
+        <h3 className="text-headline-sm text-primary font-display mb-3">
+          Educational Programs
+        </h3>
+        <p className="text-body-md text-on-surface">
+          Tailor-made educational tours, academic exchanges, and student travel programs.
+        </p>
+      </div>
+
+      {/* Card 5: Luxury Travel */}
+      <div className="bg-white p-8 rounded-2xl shadow-soft border border-outline-variant hover:shadow-soft-lg transition-shadow duration-300 flex flex-col h-full">
+        <h3 className="text-headline-sm text-primary font-display mb-3">
+          Luxury Travel
+        </h3>
+        <p className="text-body-md text-on-surface">
+          Exclusive and personalized itineraries featuring premium accommodations, VIP services, and unique experiences.
+        </p>
+      </div>
+
+      {/* Card 6: Cultural Experiences */}
+      <div className="bg-white p-8 rounded-2xl shadow-soft border border-outline-variant hover:shadow-soft-lg transition-shadow duration-300 flex flex-col h-full">
+        <h3 className="text-headline-sm text-primary font-display mb-3">
+          Cultural Experiences
+        </h3>
+        <p className="text-body-md text-on-surface">
+          Authentic programs showcasing Korea's rich heritage, culture, traditions, and lifestyle.
+        </p>
+      </div>
+
+      {/* Card 7: Group & FIT Services */}
+      <div className="bg-white p-8 rounded-2xl shadow-soft border border-outline-variant hover:shadow-soft-lg transition-shadow duration-300 flex flex-col h-full">
+        <h3 className="text-headline-sm text-primary font-display mb-3">
+          Group & FIT Services
+        </h3>
+        <p className="text-body-md text-on-surface">
+          Comprehensive travel arrangements for groups and independent travelers.
+        </p>
+      </div>
+
+      {/* Card 8: Technical & Industry Visits */}
+      <div className="bg-white p-8 rounded-2xl shadow-soft border border-outline-variant hover:shadow-soft-lg transition-shadow duration-300 flex flex-col h-full">
+        <h3 className="text-headline-sm text-primary font-display mb-3">
+          Technical &amp; Industry Visits
+        </h3>
+        <p className="text-body-md text-on-surface">
+          Specialized programs providing access to Korea's leading industries, institutions, and innovation sectors.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
 
       {/* CTA */}
       <section className="py-20 md:py-24 bg-background">
@@ -219,7 +243,7 @@ export default function AboutPage() {
             the peninsula.
           </p>
           <Button href="/contact" variant="primary">
-            Start the Conversation
+            Contact Us Now
           </Button>
         </div>
       </section>

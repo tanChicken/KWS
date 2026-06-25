@@ -7,9 +7,8 @@ const footerColumns = [
     heading: "Company",
     links: [
       { label: "About Us", href: "/about" },
-      { label: "Best Selling Tours", href: "/tours" },
+      { label: "Browse Tours", href: "/tours" },
       { label: "FAQ", href: "/faq" },
-      { label: "Careers", href: "/contact" },
     ],
   },
   {
@@ -17,7 +16,6 @@ const footerColumns = [
     links: [
       { label: "Terms of Service", href: "/contact" },
       { label: "Privacy Policy", href: "/contact" },
-      { label: "Sustainability", href: "/about" },
     ],
   },
 ];
@@ -37,8 +35,9 @@ export default function Footer() {
             />
           </Link>
           <p className="text-body-md text-surface-variant max-w-sm">
-            Your Premier Gateway to South Korea. Crafting unforgettable, luxury
-            experiences for the global traveler.
+          #802 Jindo Bldg., Mapo-Daero 44, Mapo-Gu, Seoul, Korea 
+            04174 Seoul, Republic of Korea
+
           </p>
           <div className="flex gap-4">
             <a
@@ -56,7 +55,7 @@ export default function Footer() {
               <Icon name="play_circle" className="text-[20px]" />
             </a>
             <a
-              href="mailto:info@kwsdmckorea.com"
+              href="mailto:kws@koreawithsue.co.kr"
               aria-label="Email us"
               className="w-10 h-10 rounded-full border border-surface-variant/30 flex items-center justify-center text-surface-variant hover:text-secondary-fixed hover:border-secondary-fixed transition-colors"
             >
@@ -89,7 +88,7 @@ export default function Footer() {
       <div className="max-w-container mx-auto px-5 md:px-20 pb-10">
         <div className="pt-8 border-t border-on-primary/20 flex flex-col md:flex-row justify-between gap-4 text-label-caps uppercase tracking-[0.1em] font-bold text-surface-variant">
           <p>© 2026 KWS DMC Korea. All rights reserved.</p>
-          <p>Seoul, South Korea · info@kwsdmckorea.com · +82 2 1234 5678</p>
+          <p>Seoul, South Korea · kws@koreawithsue.co.kr · +82 2 703 9313</p>
         </div>
       </div>
     </footer>

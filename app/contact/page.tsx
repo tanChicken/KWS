@@ -5,7 +5,7 @@ import Icon from "@/components/Icon";
 export const metadata: Metadata = {
   title: "Contact Us",
   description:
-    "Get in touch with Jane DMC Korea — trusted guides, flexible packages, and authentic Korea experiences for travelers and agencies.",
+    "Get in touch with KOREA DMC – KOREA WITH SUE (KWS) — trusted guides, flexible packages, and authentic Korea experiences for travelers and agencies.",
 };
 
 const socials = [
@@ -37,39 +37,51 @@ export default function ContactPage() {
                 Contact Information
               </h2>
               <div className="space-y-6">
+                
+                {/* Company */}
+                <div className="flex items-start space-x-4">
+                  <Icon name="business" className="text-secondary mt-1" />
+                  <div>
+                    <p className="text-label-caps uppercase tracking-[0.1em] font-bold text-primary mb-1">
+                      Company
+                    </p>
+                    <p className="text-body-md text-on-surface-variant font-medium">
+                      KOREA DMC – KOREA WITH SUE (KWS)
+                    </p>
+                  </div>
+                </div>
+
+                {/* Address */}
                 <div className="flex items-start space-x-4">
                   <Icon name="location_on" className="text-secondary mt-1" />
                   <div>
                     <p className="text-label-caps uppercase tracking-[0.1em] font-bold text-primary mb-1">
-                      Office Address
+                      Address
                     </p>
                     <p className="text-body-md text-on-surface-variant">
-                      123 Seoul Tower Blvd, Suite 400
+                      #802 Jindo Bldg., Mapo-Daero 44, Mapo-Gu, Seoul, Korea
                       <br />
-                      Seoul, South Korea 04320
+                      04174 Seoul, Republic of Korea
                     </p>
                   </div>
                 </div>
+
+                {/* Contact Person */}
                 <div className="flex items-start space-x-4">
-                  <Icon name="mail" className="text-secondary mt-1" />
+                  <Icon name="person" className="text-secondary mt-1" />
                   <div>
                     <p className="text-label-caps uppercase tracking-[0.1em] font-bold text-primary mb-1">
-                      Email Inquiries
+                      Contact Person
                     </p>
-                    <a
-                      href="mailto:hello@janedmckorea.com"
-                      className="text-body-md text-on-surface-variant hover:text-secondary transition-colors block mb-1"
-                    >
-                      hello@janedoe.com
-                    </a>
-                    <a
-                      href="mailto:b2b@janedoe.com"
-                      className="text-body-md text-on-surface-variant hover:text-secondary transition-colors block"
-                    >
-                      b2b@janedoe.com (Partnerships)
-                    </a>
+                    <p className="text-body-md text-on-surface-variant">
+                      <span className="font-medium">Sue Kim</span>
+                      <br />
+                      Chief Executive Officer
+                    </p>
                   </div>
                 </div>
+
+                {/* Phone */}
                 <div className="flex items-start space-x-4">
                   <Icon name="phone" className="text-secondary mt-1" />
                   <div>
@@ -77,21 +89,53 @@ export default function ContactPage() {
                       Phone
                     </p>
                     <p className="text-body-md text-on-surface-variant">
-                      +82 2-1234-5678
+                      Mobile: +82 10 6425 9313
+                      <br />
+                      Telephone: +82 2 703 9313
                     </p>
                   </div>
                 </div>
+
+                {/* Email */}
                 <div className="flex items-start space-x-4">
-                  <Icon name="schedule" className="text-secondary mt-1" />
+                  <Icon name="mail" className="text-secondary mt-1" />
                   <div>
                     <p className="text-label-caps uppercase tracking-[0.1em] font-bold text-primary mb-1">
-                      Office Hours
+                      Email
                     </p>
-                    <p className="text-body-md text-on-surface-variant">
-                      Mon – Fri, 9:00 – 18:00 KST
-                    </p>
+                    <a
+                      href="mailto:kws@koreawithsue.co.kr"
+                      className="text-body-md text-on-surface-variant hover:text-secondary transition-colors block mb-1"
+                    >
+                      kws@koreawithsue.co.kr
+                    </a>
+                    <a
+                      href="mailto:sue@koreawithsue.co.kr"
+                      className="text-body-md text-on-surface-variant hover:text-secondary transition-colors block"
+                    >
+                      sue@koreawithsue.co.kr
+                    </a>
                   </div>
                 </div>
+
+                {/* Website */}
+                <div className="flex items-start space-x-4">
+                  <Icon name="language" className="text-secondary mt-1" />
+                  <div>
+                    <p className="text-label-caps uppercase tracking-[0.1em] font-bold text-primary mb-1">
+                      Website
+                    </p>
+                    <a
+                      href="https://www.koreawithsue.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-body-md text-on-surface-variant hover:text-secondary transition-colors block"
+                    >
+                      www.koreawithsue.com
+                    </a>
+                  </div>
+                </div>
+
               </div>
             </div>
 
@@ -117,7 +161,7 @@ export default function ContactPage() {
             <div className="rounded-lg overflow-hidden border border-surface-variant bg-surface-container h-44 relative flex items-center justify-center">
               <Icon name="map" className="!text-5xl text-surface-variant" />
               <span className="absolute bottom-3 left-3 text-label-caps uppercase tracking-[0.1em] font-bold text-on-surface-variant bg-surface/80 backdrop-blur-sm px-2 py-1 rounded">
-                Myeong-dong, Seoul
+                Mapo-Gu, Seoul
               </span>
             </div>
           </div>

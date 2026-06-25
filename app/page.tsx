@@ -174,8 +174,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      <PartnerLogos />
-
       {/* Travel Inspiration / Blog */}
       <section className="max-w-container mx-auto px-5 md:px-20 py-20 md:py-section-gap">
         <SectionHeader

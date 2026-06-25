@@ -31,7 +31,7 @@ export default function ContactForm() {
             name="name"
             type="text"
             required
-            placeholder="Jane Doe"
+            placeholder="please enter your full name or agency name"
             className={fieldClasses}
           />
         </div>
@@ -44,7 +44,7 @@ export default function ContactForm() {
             name="email"
             type="email"
             required
-            placeholder="jane@example.com"
+            placeholder="please enter your email address"
             className={fieldClasses}
           />
         </div>
@@ -56,7 +56,7 @@ export default function ContactForm() {
             id="contact-phone"
             name="phone"
             type="tel"
-            placeholder="+1 (555) 000-0000"
+            placeholder="please enter your phone number"
             className={fieldClasses}
           />
         </div>
