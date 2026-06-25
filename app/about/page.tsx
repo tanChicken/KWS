@@ -11,29 +11,6 @@ export const metadata: Metadata = {
     "KWS DMC Korea is a premium Destination Management Company crafting bespoke journeys, exclusive access, and seamless travel across South Korea.",
 };
 
-const principles = [
-  {
-    icon: "flag",
-    title: "Mission",
-    text: "To design unparalleled Korean travel experiences that foster deep connections and lasting memories.",
-  },
-  {
-    icon: "verified",
-    title: "Integrity",
-    text: "Upholding the highest standards of transparency and reliability in every partnership and itinerary.",
-  },
-  {
-    icon: "star",
-    title: "Excellence",
-    text: "A relentless commitment to flawless execution and meticulous curation in all we do.",
-  },
-  {
-    icon: "volunteer_activism",
-    title: "Authenticity",
-    text: "Showcasing the true soul of Korea, respecting its heritage while embracing its modern vibrancy.",
-  },
-];
-
 export default function AboutPage() {
   return (
     <>
@@ -101,142 +78,55 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Leadership Section (Replaces Guiding Principles) */}
-<section className="py-20 bg-surface">
-  <div className="max-w-container mx-auto px-gutter">
-    <div className="flex flex-col lg:flex-row gap-12 lg:gap-20 items-center">
-      
-      {/* Text Content */}
-      <div className="flex-1 space-y-6">
-        <h2 className="text-display-lg text-primary font-display">
-          Leadership
-        </h2>
-        <h3 className="text-headline-sm text-secondary">
-          Ms. Sue Kim, Chief Executive Officer
-        </h3>
-        
-        <div className="space-y-4 text-body-md text-on-surface">
-          <p>
-            KOREA DMC – KOREA WITH SUE (KWS) is led by Ms. Sue Kim, a highly respected tourism professional with more than 25 years of experience in the travel and hospitality industry.
-          </p>
-          <p>
-            Throughout her distinguished career, Ms. Kim has successfully designed and managed international MICE events, incentive programs, corporate meetings, educational tours, and luxury travel experiences for clients from around the world.
-          </p>
-          <p>
-            Her extensive industry expertise, strong supplier relationships, and unwavering commitment to service excellence have earned the trust and confidence of global partners and stakeholders.
-          </p>
-          <p>
-            Recognized for her professionalism, leadership, and dedication to quality, Ms. Kim brings a strategic and client-focused approach to every project. Her vision is to position KWS as a trusted and innovative destination management partner, delivering authentic Korean experiences and world-class travel solutions.
-          </p>
+      {/* Leadership Section */}
+      <section className="py-20 bg-surface">
+        <div className="max-w-container mx-auto px-gutter">
+          <div className="flex flex-col lg:flex-row gap-12 lg:gap-20 items-center">
+            <div className="flex-1 space-y-6">
+              <h2 className="text-display-lg text-primary font-display">Leadership</h2>
+              <h3 className="text-headline-sm text-secondary">Ms. Sue Kim, Chief Executive Officer</h3>
+              <div className="space-y-4 text-body-md text-on-surface">
+                <p>KOREA DMC – KOREA WITH SUE (KWS) is led by Ms. Sue Kim, a highly respected tourism professional with more than 25 years of experience in the travel and hospitality industry.</p>
+                <p>Throughout her distinguished career, Ms. Kim has successfully designed and managed international MICE events, incentive programs, corporate meetings, educational tours, and luxury travel experiences for clients from around the world.</p>
+                <p>Her extensive industry expertise, strong supplier relationships, and unwavering commitment to service excellence have earned the trust and confidence of global partners and stakeholders.</p>
+                <p>Recognized for her professionalism, leadership, and dedication to quality, Ms. Kim brings a strategic and client-focused approach to every project. Her vision is to position KWS as a trusted and innovative destination management partner, delivering authentic Korean experiences and world-class travel solutions.</p>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
+      </section>
 
-  {/* Our Expertise Section */}
-<section className="py-20 bg-surface">
-  <div className="max-w-container mx-auto px-gutter">
-    
-    {/* Section Header */}
-    <div className="text-center mb-16">
-      <h2 className="text-display-lg text-primary font-display">
-        Our Expertise
-      </h2>
-    </div>
-
-    {/* Cards Grid */}
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-      
-      {/* Card 1: MICE Solutions */}
-      <div className="bg-white p-8 rounded-2xl shadow-soft border border-outline-variant hover:shadow-soft-lg transition-shadow duration-300 flex flex-col h-full">
-        <h3 className="text-headline-sm text-primary font-display mb-3">
-          MICE Solutions
-        </h3>
-        <p className="text-body-md text-on-surface">
-          Professional planning and management of meetings, incentives, conferences, and exhibitions.
-        </p>
-      </div>
-
-      {/* Card 2: Corporate Events */}
-      <div className="bg-white p-8 rounded-2xl shadow-soft border border-outline-variant hover:shadow-soft-lg transition-shadow duration-300 flex flex-col h-full">
-        <h3 className="text-headline-sm text-primary font-display mb-3">
-          Corporate Events
-        </h3>
-        <p className="text-body-md text-on-surface">
-          Comprehensive event management services for corporate meetings, executive programs, and business events.
-        </p>
-      </div>
-
-      {/* Card 3: Incentive Travel */}
-      <div className="bg-white p-8 rounded-2xl shadow-soft border border-outline-variant hover:shadow-soft-lg transition-shadow duration-300 flex flex-col h-full">
-        <h3 className="text-headline-sm text-primary font-display mb-3">
-          Incentive Travel
-        </h3>
-        <p className="text-body-md text-on-surface">
-          Customized travel experiences designed to motivate, reward, and inspire participants.
-        </p>
-      </div>
-
-      {/* Card 4: Educational Programs */}
-      <div className="bg-white p-8 rounded-2xl shadow-soft border border-outline-variant hover:shadow-soft-lg transition-shadow duration-300 flex flex-col h-full">
-        <h3 className="text-headline-sm text-primary font-display mb-3">
-          Educational Programs
-        </h3>
-        <p className="text-body-md text-on-surface">
-          Tailor-made educational tours, academic exchanges, and student travel programs.
-        </p>
-      </div>
-
-      {/* Card 5: Luxury Travel */}
-      <div className="bg-white p-8 rounded-2xl shadow-soft border border-outline-variant hover:shadow-soft-lg transition-shadow duration-300 flex flex-col h-full">
-        <h3 className="text-headline-sm text-primary font-display mb-3">
-          Luxury Travel
-        </h3>
-        <p className="text-body-md text-on-surface">
-          Exclusive and personalized itineraries featuring premium accommodations, VIP services, and unique experiences.
-        </p>
-      </div>
-
-      {/* Card 6: Cultural Experiences */}
-      <div className="bg-white p-8 rounded-2xl shadow-soft border border-outline-variant hover:shadow-soft-lg transition-shadow duration-300 flex flex-col h-full">
-        <h3 className="text-headline-sm text-primary font-display mb-3">
-          Cultural Experiences
-        </h3>
-        <p className="text-body-md text-on-surface">
-          Authentic programs showcasing Korea's rich heritage, culture, traditions, and lifestyle.
-        </p>
-      </div>
-
-      {/* Card 7: Group & FIT Services */}
-      <div className="bg-white p-8 rounded-2xl shadow-soft border border-outline-variant hover:shadow-soft-lg transition-shadow duration-300 flex flex-col h-full">
-        <h3 className="text-headline-sm text-primary font-display mb-3">
-          Group & FIT Services
-        </h3>
-        <p className="text-body-md text-on-surface">
-          Comprehensive travel arrangements for groups and independent travelers.
-        </p>
-      </div>
-
-      {/* Card 8: Technical & Industry Visits */}
-      <div className="bg-white p-8 rounded-2xl shadow-soft border border-outline-variant hover:shadow-soft-lg transition-shadow duration-300 flex flex-col h-full">
-        <h3 className="text-headline-sm text-primary font-display mb-3">
-          Technical &amp; Industry Visits
-        </h3>
-        <p className="text-body-md text-on-surface">
-          Specialized programs providing access to Korea's leading industries, institutions, and innovation sectors.
-        </p>
-      </div>
-
-    </div>
-  </div>
-</section>
+      {/* Our Expertise Section */}
+      <section className="py-20 bg-surface">
+        <div className="max-w-container mx-auto px-gutter">
+          <div className="text-center mb-16">
+            <h2 className="text-display-lg text-primary font-display">Our Expertise</h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              { title: "MICE Solutions", text: "Professional planning and management of meetings, incentives, conferences, and exhibitions." },
+              { title: "Corporate Events", text: "Comprehensive event management services for corporate meetings, executive programs, and business events." },
+              { title: "Incentive Travel", text: "Customized travel experiences designed to motivate, reward, and inspire participants." },
+              { title: "Educational Programs", text: "Tailor-made educational tours, academic exchanges, and student travel programs." },
+              { title: "Luxury Travel", text: "Exclusive and personalized itineraries featuring premium accommodations, VIP services, and unique experiences." },
+              { title: "Cultural Experiences", text: "Authentic programs showcasing Korea{'s} rich heritage, culture, traditions, and lifestyle." },
+              { title: "Group & FIT Services", text: "Comprehensive travel arrangements for groups and independent travelers." },
+              { title: "Technical & Industry Visits", text: "Specialized programs providing access to Korea's leading industries, institutions, and innovation sectors." }
+            ].map((item, idx) => (
+              <div key={idx} className="bg-white p-8 rounded-2xl shadow-soft border border-outline-variant hover:shadow-soft-lg transition-shadow duration-300 flex flex-col h-full">
+                <h3 className="text-headline-sm text-primary font-display mb-3">{item.title}</h3>
+                <p className="text-body-md text-on-surface">{item.text}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
       {/* CTA */}
       <section className="py-20 md:py-24 bg-background">
         <div className="max-w-container mx-auto px-5 md:px-20 text-center">
           <h2 className="font-display text-headline-md text-primary mb-4">
-            Let&rsquo;s Craft Your Korea Story
+            Let{"'"}s Craft Your Korea Story
           </h2>
           <p className="text-body-lg text-on-surface-variant max-w-xl mx-auto mb-8">
             Speak with a consultant who knows every valley, table, and tide of
