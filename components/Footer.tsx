@@ -1,26 +1,29 @@
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Icon from "./Icon";
 
-const footerColumns = [
-  {
-    heading: "Company",
-    links: [
-      { label: "About Us", href: "/about" },
-      { label: "Browse Tours", href: "/tours" },
-      { label: "FAQ", href: "/faq" },
-    ],
-  },
-  {
-    heading: "Legal",
-    links: [
-      { label: "Terms of Service", href: "/contact" },
-      { label: "Privacy Policy", href: "/contact" },
-    ],
-  },
-];
-
 export default function Footer() {
+  const t = useTranslations("Footer");
+
+  const footerColumns = [
+    {
+      heading: t("columns.company.heading"),
+      links: [
+        { label: t("columns.company.about"), href: "/about" },
+        { label: t("columns.company.tours"), href: "/tours" },
+        { label: t("columns.company.faq"), href: "/faq" },
+      ],
+    },
+    {
+      heading: t("columns.legal.heading"),
+      links: [
+        { label: t("columns.legal.terms"), href: "/contact" },
+        { label: t("columns.legal.privacy"), href: "/contact" },
+      ],
+    },
+  ];
+
   return (
     <footer className="bg-primary text-on-primary">
       <div className="max-w-container mx-auto px-5 md:px-20 py-20 md:py-section-gap grid grid-cols-1 md:grid-cols-4 gap-gutter">
@@ -35,9 +38,7 @@ export default function Footer() {
             />
           </Link>
           <p className="text-body-md text-surface-variant max-w-sm">
-          #802 Jindo Bldg., Mapo-Daero 44, Mapo-Gu, Seoul, Korea 
-            04174 Seoul, Republic of Korea
-
+            {t("address")}
           </p>
           <div className="flex gap-4">
             <a
@@ -73,7 +74,7 @@ export default function Footer() {
               {col.links.map((link) => (
                 <li key={link.label}>
                   <Link
-                    href={link.href}
+                    href={link.href as any}
                     className="text-body-md text-surface-variant hover:text-secondary-fixed transition-colors duration-200"
                   >
                     {link.label}
@@ -87,8 +88,8 @@ export default function Footer() {
 
       <div className="max-w-container mx-auto px-5 md:px-20 pb-10">
         <div className="pt-8 border-t border-on-primary/20 flex flex-col md:flex-row justify-between gap-4 text-label-caps uppercase tracking-[0.1em] font-bold text-surface-variant">
-          <p>© 2026 KWS DMC Korea. All rights reserved.</p>
-          <p>Seoul, South Korea · kws@koreawithsue.co.kr · +82 2 703 9313</p>
+          <p>{t("rights")}</p>
+          <p>{t("contactInfo")}</p>
         </div>
       </div>
     </footer>
