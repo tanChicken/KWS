@@ -1,0 +1,120 @@
+{
+  "Hero": {
+    "title": "Discover Korea the Right Way",
+    "subtitle": "Experience Korea with care, comfort, and unforgettable moments. We don't just plan trips — we create journeys that stay with you forever. Your reliable Destination Management Company in Korea.",
+    "ctaBook": "Book Your Travel",
+    "ctaQuote": "Request a Custom Quote",
+    "badges": {
+      "b2b": "B2B & Individual Travelers",
+      "multilingual": "Multilingual Support",
+      "custom": "Custom Korea Itineraries",
+      "trusted": "Trusted DMC Partner"
+    },
+    "altPalace": "Traditional Korean palace in Seoul at golden hour sunset"
+  },
+  "HomePage": {
+    "bestSelling": {
+      "eyebrow": "Curated Experiences",
+      "title": "Best Selling Tours",
+      "subtitle": "Exclusive journeys designed for the discerning traveler. Limited spots. Maximum impressions.",
+      "viewAll": "View All Tours"
+    },
+    "services": {
+      "eyebrow": "Our Services",
+      "title": "Journeys for Every Traveler",
+      "subtitle": "From leisure and adventure to corporate MICE programs and medical tourism — one trusted partner for all of Korea."
+    },
+    "whyChooseUs": {
+      "eyebrow": "Why Choose Us",
+      "title": "Travel Designed With Care",
+      "subtitle": "We are not a marketplace. We are your Destination Management Company on the ground in Korea — accountable for every detail of your journey.",
+      "altTeaCeremony": "Elegant Korean interior prepared for a traditional tea ceremony",
+      "items": {
+        "localExpertise": {
+          "title": "Local Expertise",
+          "text": "Born and based in Korea, our consultants unlock places, tables, and moments no guidebook can reach."
+        },
+        "tailorMade": {
+          "title": "Fully Tailor-Made",
+          "text": "Every itinerary is built from a blank page around your pace, passions, and dietary needs."
+        },
+        "support": {
+          "title": "24/7 On-Trip Support",
+          "text": "A dedicated, multilingual consultant stays by your side from first inquiry to final farewell."
+        },
+        "partnerships": {
+          "title": "Premium Partnerships",
+          "text": "Preferred rates and privileges at Korea's finest hotels, venues, and private experiences."
+        }
+      }
+    },
+    "reviews": {
+      "eyebrow": "Traveler Reviews",
+      "title": "Stories From Our Guests",
+      "subtitle": "Real journeys, told by the travelers and partners who lived them."
+    },
+    "blog": {
+      "eyebrow": "Travel Inspiration",
+      "title": "Notes From Korea",
+      "subtitle": "Ideas, seasons, and stories to spark your next journey.",
+      "readStory": "Read Story",
+      "posts": {
+        "seoul": {
+          "alt": "Seoul skyline glittering at night",
+          "category": "City Guide",
+          "title": "48 Golden Hours in Seoul: A Connoisseur's Itinerary",
+          "excerpt": "From dawn at Gyeongbokgung to a midnight speakeasy in Euljiro — how to taste the capital's two souls in one weekend."
+        },
+        "tea": {
+          "alt": "Traditional Korean tea ceremony setting",
+          "category": "Culture",
+          "title": "The Quiet Luxury of the Korean Tea Ceremony",
+          "excerpt": "Inside the centuries-old ritual that slows time — and where to experience it privately with a tea master."
+        },
+        "winter": {
+          "alt": "Snow-covered alpine resort in Pyeongchang",
+          "category": "Seasonal",
+          "title": "Why Winter Is Korea's Best-Kept Secret",
+          "excerpt": "Powder slopes, steaming jjimjilbangs, and festive markets: the case for a December escape to the highlands."
+        }
+      }
+    },
+    "cta": {
+      "altPalace": "Traditional Korean palace against the modern Seoul skyline",
+      "title": "Ready to Discover Korea?",
+      "subtitle": "Tell us your dates, interests, and dreams — our consultants will craft a journey worthy of them.",
+      "buttonPlan": "Plan My Trip",
+      "buttonBrowse": "Browse Best Sellers"
+    }
+  },
+  "Navbar": {
+    "links": {
+      "home": "Home",
+      "tours": "Tours",
+      "about": "About Us",
+      "faq": "FAQ",
+      "contact": "Contact"
+    },
+    "contactUs": "Contact Us",
+    "planMyTrip": "Plan My Trip",
+    "language": "Language"
+  },
+  "Footer": {
+    "address": "#802 Jindo Bldg., Mapo-Daero 44, Mapo-Gu, Seoul, Korea 04174 Seoul, Republic of Korea",
+    "columns": {
+      "company": {
+        "heading": "Company",
+        "about": "About Us",
+        "tours": "Browse Tours",
+        "faq": "FAQ"
+      },
+      "legal": {
+        "heading": "Legal",
+        "terms": "Terms of Service",
+        "privacy": "Privacy Policy"
+      }
+    },
+    "rights": "© 2026 KWS DMC Korea. All rights reserved.",
+    "contactInfo": "Seoul, South Korea · kws@koreawithsue.co.kr · +82 2 703 9313"
+  }
+}

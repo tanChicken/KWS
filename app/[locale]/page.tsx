@@ -1,5 +1,7 @@
 import Image from "next/image";
-import Link from "next/link";
+// IMPORTANT: Swapped next/link for our i18n link
+import { Link } from "@/i18n/routing";
+import { useTranslations } from "next-intl";
 import Hero from "@/components/Hero";
 import Button from "@/components/Button";
 import Icon from "@/components/Icon";
@@ -12,82 +14,86 @@ import { tours } from "@/data/tours";
 import { categories } from "@/data/categories";
 import { testimonials } from "@/data/testimonials";
 
-const whyChooseUs = [
-  {
-    icon: "diversity_3",
-    title: "Local Expertise",
-    text: "Born and based in Korea, our consultants unlock places, tables, and moments no guidebook can reach.",
-  },
-  {
-    icon: "tune",
-    title: "Fully Tailor-Made",
-    text: "Every itinerary is built from a blank page around your pace, passions, and dietary needs.",
-  },
-  {
-    icon: "support_agent",
-    title: "24/7 On-Trip Support",
-    text: "A dedicated, multilingual consultant stays by your side from first inquiry to final farewell.",
-  },
-  {
-    icon: "workspace_premium",
-    title: "Premium Partnerships",
-    text: "Preferred rates and privileges at Korea's finest hotels, venues, and private experiences.",
-  },
-];
-
-const blogPosts = [
-  {
-    image: "/assets/stitch/seoul-night.jpg",
-    alt: "Seoul skyline glittering at night",
-    category: "City Guide",
-    title: "48 Golden Hours in Seoul: A Connoisseur's Itinerary",
-    excerpt:
-      "From dawn at Gyeongbokgung to a midnight speakeasy in Euljiro — how to taste the capital's two souls in one weekend.",
-  },
-  {
-    image: "/assets/stitch/about-tea-ceremony.jpg",
-    alt: "Traditional Korean tea ceremony setting",
-    category: "Culture",
-    title: "The Quiet Luxury of the Korean Tea Ceremony",
-    excerpt:
-      "Inside the centuries-old ritual that slows time — and where to experience it privately with a tea master.",
-  },
-  {
-    image: "/assets/stitch/tour-winter.jpg",
-    alt: "Snow-covered alpine resort in Pyeongchang",
-    category: "Seasonal",
-    title: "Why Winter Is Korea's Best-Kept Secret",
-    excerpt:
-      "Powder slopes, steaming jjimjilbangs, and festive markets: the case for a December escape to the highlands.",
-  },
-];
-
 export default function HomePage() {
+  // Target the "HomePage" namespace in your JSON dictionary
+  const t = useTranslations("HomePage");
+  
   const bestSellers = tours.filter((tour) => tour.bestSeller).slice(0, 3);
+
+  // Moved inside so we can translate the text
+  const whyChooseUs = [
+    {
+      icon: "diversity_3",
+      title: t("whyChooseUs.items.localExpertise.title"),
+      text: t("whyChooseUs.items.localExpertise.text"),
+    },
+    {
+      icon: "tune",
+      title: t("whyChooseUs.items.tailorMade.title"),
+      text: t("whyChooseUs.items.tailorMade.text"),
+    },
+    {
+      icon: "support_agent",
+      title: t("whyChooseUs.items.support.title"),
+      text: t("whyChooseUs.items.support.text"),
+    },
+    {
+      icon: "workspace_premium",
+      title: t("whyChooseUs.items.partnerships.title"),
+      text: t("whyChooseUs.items.partnerships.text"),
+    },
+  ];
+
+  // Moved inside so we can translate the text
+  const blogPosts = [
+    {
+      image: "/assets/stitch/seoul-night.jpg",
+      alt: t("blog.posts.seoul.alt"),
+      category: t("blog.posts.seoul.category"),
+      title: t("blog.posts.seoul.title"),
+      excerpt: t("blog.posts.seoul.excerpt"),
+    },
+    {
+      image: "/assets/stitch/about-tea-ceremony.jpg",
+      alt: t("blog.posts.tea.alt"),
+      category: t("blog.posts.tea.category"),
+      title: t("blog.posts.tea.title"),
+      excerpt: t("blog.posts.tea.excerpt"),
+    },
+    {
+      image: "/assets/stitch/tour-winter.jpg",
+      alt: t("blog.posts.winter.alt"),
+      category: t("blog.posts.winter.category"),
+      title: t("blog.posts.winter.title"),
+      excerpt: t("blog.posts.winter.excerpt"),
+    },
+  ];
 
   return (
     <>
+      {/* Hero handles its own translations internally! */}
       <Hero />
 
-      {/* Spacer for the floating search bar overlap on desktop */}
       <div className="hidden md:block h-32" />
 
-      {/* Best Selling Tours preview */}
+      {/* Best Selling Tours */}
       <section className="max-w-container mx-auto px-5 md:px-20 py-20 md:py-section-gap">
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-2">
           <SectionHeader
-            eyebrow="Curated Experiences"
-            title="Best Selling Tours"
-            subtitle="Exclusive journeys designed for the discerning traveler. Limited spots. Maximum impressions."
+            eyebrow={t("bestSelling.eyebrow")}
+            title={t("bestSelling.title")}
+            subtitle={t("bestSelling.subtitle")}
           />
           <Link
             href="/tours"
             className="hidden md:inline-flex items-center gap-2 mb-16 text-label-caps uppercase tracking-[0.1em] font-bold text-primary border-b-2 border-primary pb-1 hover:text-secondary hover:border-secondary transition-colors whitespace-nowrap"
           >
-            View All Tours
+            {t("bestSelling.viewAll")}
             <Icon name="arrow_forward" className="text-[16px]" />
           </Link>
         </div>
+        
+        {/* Note: TourCard data itself will need to be translated next! */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {bestSellers.map((tour) => (
             <TourCard key={tour.slug} tour={tour} />
@@ -95,7 +101,7 @@ export default function HomePage() {
         </div>
         <div className="mt-12 text-center md:hidden">
           <Button href="/tours" variant="outline">
-            View All Tours
+            {t("bestSelling.viewAll")}
           </Button>
         </div>
       </section>
@@ -104,10 +110,11 @@ export default function HomePage() {
       <section className="bg-surface-container-low border-y border-outline-variant/20">
         <div className="max-w-container mx-auto px-5 md:px-20 py-20 md:py-section-gap">
           <SectionHeader
-            eyebrow="Our Services"
-            title="Journeys for Every Traveler"
-            subtitle="From leisure and adventure to corporate MICE programs and medical tourism — one trusted partner for all of Korea."
+            eyebrow={t("services.eyebrow")}
+            title={t("services.title")}
+            subtitle={t("services.subtitle")}
           />
+          {/* Note: CategoryCard data itself will need to be translated next! */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {categories.map((category) => (
               <CategoryCard key={category.title} category={category} />
@@ -121,15 +128,15 @@ export default function HomePage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div>
             <SectionHeader
-              eyebrow="Why Choose Us"
-              title="Travel Designed With Care"
-              subtitle="We are not a marketplace. We are your Destination Management Company on the ground in Korea — accountable for every detail of your journey."
+              eyebrow={t("whyChooseUs.eyebrow")}
+              title={t("whyChooseUs.title")}
+              subtitle={t("whyChooseUs.subtitle")}
             />
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
               {whyChooseUs.map((item) => (
                 <div key={item.title}>
                   <div className="w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center mb-4">
-                    <Icon name={item.icon} filled className="text-secondary" />
+                    <Icon name={item.icon as any} filled className="text-secondary" />
                   </div>
                   <h3 className="font-display text-headline-sm text-[20px] text-primary mb-2">
                     {item.title}
@@ -147,7 +154,7 @@ export default function HomePage() {
             <div className="relative h-[480px] lg:h-[600px] rounded overflow-hidden shadow-soft-lg">
               <Image
                 src="/assets/stitch/about-tea-ceremony.jpg"
-                alt="Elegant Korean interior prepared for a traditional tea ceremony"
+                alt={t("whyChooseUs.altTeaCeremony")}
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover"
@@ -161,11 +168,12 @@ export default function HomePage() {
       <section className="bg-primary">
         <div className="max-w-container mx-auto px-5 md:px-20 py-20 md:py-section-gap">
           <SectionHeader
-            eyebrow="Traveler Reviews"
-            title="Stories From Our Guests"
-            subtitle="Real journeys, told by the travelers and partners who lived them."
+            eyebrow={t("reviews.eyebrow")}
+            title={t("reviews.title")}
+            subtitle={t("reviews.subtitle")}
             light
           />
+          {/* Note: Testimonials data itself will need to be translated next! */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {testimonials.map((testimonial) => (
               <TestimonialCard key={testimonial.name} {...testimonial} />
@@ -177,9 +185,9 @@ export default function HomePage() {
       {/* Travel Inspiration / Blog */}
       <section className="max-w-container mx-auto px-5 md:px-20 py-20 md:py-section-gap">
         <SectionHeader
-          eyebrow="Travel Inspiration"
-          title="Notes From Korea"
-          subtitle="Ideas, seasons, and stories to spark your next journey."
+          eyebrow={t("blog.eyebrow")}
+          title={t("blog.title")}
+          subtitle={t("blog.subtitle")}
         />
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {blogPosts.map((post) => (
@@ -207,7 +215,7 @@ export default function HomePage() {
                   {post.excerpt}
                 </p>
                 <span className="inline-flex items-center gap-2 text-label-caps uppercase tracking-[0.1em] font-bold text-primary group-hover:text-secondary transition-colors">
-                  Read Story
+                  {t("blog.readStory")}
                   <Icon name="arrow_forward" className="text-[16px]" />
                 </span>
               </div>
@@ -220,7 +228,7 @@ export default function HomePage() {
       <section className="relative overflow-hidden">
         <Image
           src="/assets/stitch/hero-seoul.jpg"
-          alt="Traditional Korean palace against the modern Seoul skyline"
+          alt={t("cta.altPalace")}
           fill
           sizes="100vw"
           className="object-cover"
@@ -228,18 +236,17 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-primary/80" />
         <div className="relative max-w-container mx-auto px-5 md:px-20 py-24 md:py-32 text-center">
           <h2 className="font-display text-display-lg-mobile md:text-display-lg text-on-primary mb-6">
-            Ready to Discover Korea?
+            {t("cta.title")}
           </h2>
           <p className="text-body-lg text-on-primary/85 max-w-2xl mx-auto mb-10">
-            Tell us your dates, interests, and dreams — our consultants will
-            craft a journey worthy of them.
+            {t("cta.subtitle")}
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Button href="/contact" variant="gold" className="shadow-cta">
-              Plan My Trip
+              {t("cta.buttonPlan")}
             </Button>
             <Button href="/tours" variant="ghost-light">
-              Browse Best Sellers
+              {t("cta.buttonBrowse")}
             </Button>
           </div>
         </div>

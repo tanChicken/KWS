@@ -1,22 +1,24 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
+import { Link, usePathname } from "@/i18n/routing";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
-import { usePathname } from "next/navigation";
 import Icon from "./Icon";
-
-const navLinks = [
-  { label: "Home", href: "/" },
-  { label: "Tours", href: "/tours" },
-  { label: "About Us", href: "/about" },
-  { label: "FAQ", href: "/faq" },
-  { label: "Contact", href: "/contact" },
-];
+import LanguageSwitcher from "@/components/LanguageSwitcher";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const pathname = usePathname();
+  const t = useTranslations("Navbar");
+
+  const navLinks = [
+    { label: t("links.home"), href: "/" },
+    { label: t("links.tours"), href: "/tours" },
+    { label: t("links.about"), href: "/about" },
+    { label: t("links.faq"), href: "/faq" },
+    { label: t("links.contact"), href: "/contact" },
+  ];
 
   const isActive = (href: string) =>
     href === "/" ? pathname === "/" : pathname.startsWith(href);
@@ -39,7 +41,7 @@ export default function Navbar() {
           {navLinks.map((link) => (
             <Link
               key={link.href}
-              href={link.href}
+              href={link.href as any}
               className={`text-label-caps uppercase tracking-[0.1em] font-bold pb-1 transition-colors duration-300 ${
                 isActive(link.href)
                   ? "text-primary border-b-2 border-secondary"
@@ -52,23 +54,19 @@ export default function Navbar() {
         </nav>
 
         <div className="hidden md:flex items-center space-x-4">
-          <button
-            aria-label="Select language"
-            className="text-on-surface-variant hover:text-secondary transition-colors p-2"
-          >
-            <Icon name="language" />
-          </button>
+          <LanguageSwitcher />
+
           <Link
             href="/contact"
             className="border border-primary text-primary px-6 py-2.5 rounded text-label-caps uppercase tracking-[0.1em] font-bold hover:bg-surface-variant transition-colors"
           >
-            Contact Us
+            {t("contactUs")}
           </Link>
           <Link
             href="/contact"
             className="bg-primary text-on-primary px-6 py-2.5 rounded text-label-caps uppercase tracking-[0.1em] font-bold hover:bg-primary-container transition-colors shadow-sm"
           >
-            Plan My Trip
+            {t("planMyTrip")}
           </Link>
         </div>
 
@@ -82,14 +80,18 @@ export default function Navbar() {
         </button>
       </div>
 
-      {/* Mobile menu overlay */}
       {menuOpen && (
         <div className="fixed inset-0 top-20 bg-surface z-40 flex flex-col md:hidden">
           <nav aria-label="Mobile" className="flex flex-col p-5 space-y-6">
+            <div className="flex items-center justify-between border-b border-surface-variant pb-4 mb-2">
+              <span className="text-on-surface-variant font-bold uppercase tracking-wider text-sm">{t("language")}</span>
+              <LanguageSwitcher />
+            </div>
+
             {navLinks.map((link) => (
               <Link
                 key={link.href}
-                href={link.href}
+                href={link.href as any}
                 onClick={() => setMenuOpen(false)}
                 className={`font-display text-display-lg-mobile border-b border-surface-variant pb-2 ${
                   isActive(link.href) ? "text-primary" : "text-on-surface-variant"
@@ -105,14 +107,14 @@ export default function Navbar() {
               onClick={() => setMenuOpen(false)}
               className="block w-full px-6 py-4 bg-secondary text-on-secondary text-label-caps uppercase tracking-[0.1em] font-bold rounded text-center"
             >
-              Plan My Trip
+              {t("planMyTrip")}
             </Link>
             <Link
               href="/contact"
               onClick={() => setMenuOpen(false)}
               className="block w-full px-6 py-4 bg-primary text-on-primary text-label-caps uppercase tracking-[0.1em] font-bold rounded text-center"
             >
-              Contact Us
+              {t("contactUs")}
             </Link>
           </div>
         </div>
