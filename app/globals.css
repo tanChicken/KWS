@@ -8,6 +8,9 @@ html {
 
 body {
   @apply bg-surface text-on-surface font-body antialiased;
+  /* Guard against accidental horizontal scroll on mobile from decorative
+     offset elements (no sticky elements are used, so this is safe). */
+  overflow-x: hidden;
 }
 
 .material-symbols-outlined {

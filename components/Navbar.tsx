@@ -24,7 +24,7 @@ export default function Navbar() {
     href === "/" ? pathname === "/" : pathname.startsWith(href);
 
   return (
-    <header className="fixed top-0 w-full z-50 bg-surface/70 backdrop-blur-xl shadow-nav">
+    <header className="fixed top-0 w-full z-50 shadow-nav bg-surface md:bg-surface/70 md:backdrop-blur-xl">
       <div className="max-w-container mx-auto px-5 md:px-20 flex justify-between items-center h-20">
         <Link href="/" className="flex items-center h-full py-2" onClick={() => setMenuOpen(false)}>
           <Image
@@ -56,12 +56,12 @@ export default function Navbar() {
         <div className="hidden md:flex items-center space-x-4">
           <LanguageSwitcher />
 
-          <Link
+          {/* <Link
             href="/contact"
             className="border border-primary text-primary px-6 py-2.5 rounded text-label-caps uppercase tracking-[0.1em] font-bold hover:bg-surface-variant transition-colors"
           >
             {t("contactUs")}
-          </Link>
+          </Link> */}
           <Link
             href="/contact"
             className="bg-primary text-on-primary px-6 py-2.5 rounded text-label-caps uppercase tracking-[0.1em] font-bold hover:bg-primary-container transition-colors shadow-sm"
@@ -70,24 +70,22 @@ export default function Navbar() {
           </Link>
         </div>
 
-        <button
-          aria-label={menuOpen ? "Close menu" : "Open menu"}
-          aria-expanded={menuOpen}
-          className="md:hidden text-primary p-2"
-          onClick={() => setMenuOpen(!menuOpen)}
-        >
-          <Icon name={menuOpen ? "close" : "menu"} />
-        </button>
+        <div className="flex items-center gap-2 md:hidden">
+          <LanguageSwitcher />
+          <button
+            aria-label={menuOpen ? "Close menu" : "Open menu"}
+            aria-expanded={menuOpen}
+            className="text-primary p-2"
+            onClick={() => setMenuOpen(!menuOpen)}
+          >
+            <Icon name={menuOpen ? "close" : "menu"} />
+          </button>
+        </div>
       </div>
 
       {menuOpen && (
-        <div className="fixed inset-0 top-20 bg-surface z-40 flex flex-col md:hidden">
+        <div className="fixed inset-0 top-20 bg-surface z-40 flex flex-col md:hidden overflow-y-auto">
           <nav aria-label="Mobile" className="flex flex-col p-5 space-y-6">
-            <div className="flex items-center justify-between border-b border-surface-variant pb-4 mb-2">
-              <span className="text-on-surface-variant font-bold uppercase tracking-wider text-sm">{t("language")}</span>
-              <LanguageSwitcher />
-            </div>
-
             {navLinks.map((link) => (
               <Link
                 key={link.href}
@@ -109,13 +107,13 @@ export default function Navbar() {
             >
               {t("planMyTrip")}
             </Link>
-            <Link
+            {/* <Link
               href="/contact"
               onClick={() => setMenuOpen(false)}
               className="block w-full px-6 py-4 bg-primary text-on-primary text-label-caps uppercase tracking-[0.1em] font-bold rounded text-center"
             >
               {t("contactUs")}
-            </Link>
+            </Link> */}
           </div>
         </div>
       )}

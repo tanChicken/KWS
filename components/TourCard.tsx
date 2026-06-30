@@ -8,7 +8,7 @@ interface TourCardProps {
 }
 
 export default function TourCard({ tour }: TourCardProps) {
-  const detailHref = "/tours/ultimate-korea-highland-escape";
+  const detailHref = `/tours/${tour.slug}`;
 
   return (
     <article className="bg-surface-container-lowest rounded-xl overflow-hidden border border-surface-variant/50 shadow-soft hover:shadow-soft-lg transition-shadow duration-300 flex flex-col">
@@ -57,7 +57,9 @@ export default function TourCard({ tour }: TourCardProps) {
         </p>
         <div className="mt-auto">
           <p className="text-label-caps uppercase tracking-[0.1em] font-bold text-primary mb-4">
-            From ${tour.priceFrom.toLocaleString()} / pp
+            {tour.priceFrom
+              ? `From $${tour.priceFrom.toLocaleString()} / pp`
+              : ""}
           </p>
           <div className="pt-4 border-t border-surface-variant flex gap-3">
             <Link

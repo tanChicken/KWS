@@ -24,15 +24,15 @@ export default function ToursPage() {
 
       <section className="max-w-container mx-auto px-5 md:px-20">
         <div className="flex flex-col lg:flex-row gap-gutter items-start">
-          <TourFilters />
+          {/* <TourFilters /> */}
 
-          <div className="w-full lg:w-3/4">
+          <div className="w-full">
             <div className="flex justify-between items-center mb-8">
               <p className="text-body-md text-on-surface-variant">
                 Showing <strong className="text-primary">{tours.length}</strong>{" "}
                 exclusive experiences
               </p>
-              <div className="flex items-center space-x-2">
+              {/* <div className="flex items-center space-x-2">
                 <label
                   htmlFor="sort"
                   className="text-label-sm text-on-surface-variant hidden sm:block"
@@ -47,7 +47,7 @@ export default function ToursPage() {
                   <option>Price: High to Low</option>
                   <option>Duration: Long to Short</option>
                 </select>
-              </div>
+              </div> */}
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -56,14 +56,14 @@ export default function ToursPage() {
               ))}
             </div>
 
-            <div className="mt-12 flex justify-center">
+            {/* <div className="mt-12 flex justify-center">
               <button
                 type="button"
                 className="text-label-caps uppercase tracking-[0.1em] font-bold text-primary border-b-2 border-primary pb-1 hover:text-secondary hover:border-secondary transition-colors"
               >
                 Discover More Journeys
               </button>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

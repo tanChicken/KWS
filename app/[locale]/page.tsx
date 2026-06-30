@@ -74,7 +74,7 @@ export default function HomePage() {
       {/* Hero handles its own translations internally! */}
       <Hero />
 
-      <div className="hidden md:block h-32" />
+      {/* <div className="hidden md:block h-32" /> */}
 
       {/* Best Selling Tours */}
       <section className="max-w-container mx-auto px-5 md:px-20 py-20 md:py-section-gap">
@@ -146,7 +146,7 @@ export default function HomePage() {
               ))}
             </div>
           </div>
-          <div className="relative">
+          <div className="relative hidden lg:block">
             <div
               className="absolute -inset-4 border border-primary/10 rounded translate-x-4 translate-y-4"
               aria-hidden="true"
@@ -165,25 +165,25 @@ export default function HomePage() {
       </section>
 
       {/* Traveler Reviews */}
-      <section className="bg-primary">
+      {/* <section className="bg-primary">
         <div className="max-w-container mx-auto px-5 md:px-20 py-20 md:py-section-gap">
           <SectionHeader
             eyebrow={t("reviews.eyebrow")}
             title={t("reviews.title")}
             subtitle={t("reviews.subtitle")}
             light
-          />
+          /> */}
           {/* Note: Testimonials data itself will need to be translated next! */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {testimonials.map((testimonial) => (
               <TestimonialCard key={testimonial.name} {...testimonial} />
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Travel Inspiration / Blog */}
-      <section className="max-w-container mx-auto px-5 md:px-20 py-20 md:py-section-gap">
+      {/* <section className="max-w-container mx-auto px-5 md:px-20 py-20 md:py-section-gap">
         <SectionHeader
           eyebrow={t("blog.eyebrow")}
           title={t("blog.title")}
@@ -222,7 +222,7 @@ export default function HomePage() {
             </article>
           ))}
         </div>
-      </section>
+      </section> */}
 
       {/* Closing CTA */}
       <section className="relative overflow-hidden">

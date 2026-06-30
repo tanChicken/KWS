@@ -17,7 +17,7 @@ export default function Hero() {
   ];
 
   return (
-    <section className="relative min-h-[760px] md:min-h-[820px] flex flex-col justify-center items-center text-center px-5 md:px-20 pt-20">
+    <section className="relative min-h-[calc(100dvh_-_5rem)] flex flex-col justify-center items-center text-center px-5 md:px-20 pt-20">
       <div className="absolute inset-0 z-0">
         <Image
           src="/assets/stitch/hero-palace.jpg"
@@ -61,12 +61,12 @@ export default function Hero() {
       </div>
 
       {/* Floating search bar overlapping the hero bottom edge */}
-      <div className="relative z-20 w-full max-w-container translate-y-1/2 -mt-10 hidden md:block">
+      {/* <div className="relative z-20 w-full max-w-container translate-y-1/2 -mt-10 hidden md:block">
         <TourSearchBar />
       </div>
       <div className="relative z-20 w-full -mb-8 mt-4 md:hidden">
         <TourSearchBar />
-      </div>
+      </div> */}
     </section>
   );
 }
