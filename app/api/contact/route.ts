@@ -106,9 +106,16 @@ export async function POST(request: Request) {
 
   try {
     await transporter.sendMail({
-      from: `"KWS Website" <${CONTACT_FROM_EMAIL || SMTP_USER}>`,
+      // Gmail requires the actual From address to be your authenticated account
+      // (CONTACT_FROM_EMAIL), so we surface the visitor via the display name...
+      from: {
+        name: `${name} (via KWS Website)`,
+        address: CONTACT_FROM_EMAIL || SMTP_USER,
+      },
       to: CONTACT_TO_EMAIL,
-      replyTo: `"${name}" <${email}>`, // replies go straight to the enquirer
+      // ...and set Reply-To to the address they typed, so hitting "Reply"
+      // emails the customer directly.
+      replyTo: { name, address: email },
       subject: `New inquiry: ${inquiryLabel} — ${name}`,
       text: textBody,
       html: htmlBody,
