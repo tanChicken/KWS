@@ -9,18 +9,46 @@ const fieldClasses =
 const labelClasses =
   "block text-label-caps uppercase tracking-[0.1em] font-bold text-primary";
 
+type Status = "idle" | "sending" | "success" | "error";
+
 export default function ContactForm() {
-  const [submitted, setSubmitted] = useState(false);
+  const [status, setStatus] = useState<Status>("idle");
+  const [errorMsg, setErrorMsg] = useState("");
+
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    const form = e.currentTarget;
+    const payload = Object.fromEntries(new FormData(form).entries());
+
+    setStatus("sending");
+    setErrorMsg("");
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+
+      if (!res.ok) {
+        const data = await res.json().catch(() => ({}));
+        throw new Error(data.error ?? "Something went wrong. Please try again.");
+      }
+
+      form.reset();
+      setStatus("success");
+    } catch (err) {
+      setStatus("error");
+      setErrorMsg(
+        err instanceof Error
+          ? err.message
+          : "Something went wrong. Please try again."
+      );
+    }
+  }
 
   return (
-    <form
-      className="space-y-8"
-      onSubmit={(e) => {
-        e.preventDefault();
-        setSubmitted(true);
-      }}
-      aria-label="Inquiry form"
-    >
+    <form className="space-y-8" onSubmit={handleSubmit} aria-label="Inquiry form">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div className="space-y-2">
           <label htmlFor="contact-name" className={labelClasses}>
@@ -90,7 +118,7 @@ export default function ContactForm() {
         <textarea
           id="contact-message"
           name="message"
-          rows={5}
+          rows={10.5}
           required
           placeholder="Tell us about your ideal Korean experience..."
           className={`${fieldClasses} resize-y`}
@@ -98,17 +126,26 @@ export default function ContactForm() {
       </div>
 
       <div className="pt-4 flex flex-col md:flex-row md:items-center md:justify-end gap-4">
-        {submitted && (
+        {status === "success" && (
           <p role="status" className="text-body-md text-primary">
             Thank you — our travel consultants will be in touch within 24 hours.
           </p>
         )}
+        {status === "error" && (
+          <p role="alert" className="text-body-md text-error">
+            {errorMsg}
+          </p>
+        )}
         <button
           type="submit"
-          className="bg-secondary text-on-secondary text-label-caps uppercase tracking-[0.1em] font-bold px-8 py-4 rounded hover:bg-secondary/90 transition-colors shadow-sm flex items-center justify-center gap-2"
+          disabled={status === "sending"}
+          className="bg-secondary text-on-secondary text-label-caps uppercase tracking-[0.1em] font-bold px-8 py-4 rounded hover:bg-secondary/90 transition-colors shadow-sm flex items-center justify-center gap-2 disabled:opacity-60 disabled:cursor-not-allowed"
         >
-          Submit Inquiry
-          <Icon name="arrow_forward" className="text-[20px]" />
+          {status === "sending" ? "Sending…" : "Submit Inquiry"}
+          <Icon
+            name={status === "sending" ? "progress_activity" : "arrow_forward"}
+            className={`text-[20px] ${status === "sending" ? "animate-spin" : ""}`}
+          />
         </button>
       </div>
     </form>

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import ContactForm from "@/components/ContactForm";
 import Icon from "@/components/Icon";
+import GoogleMap from "@/components/GoogleMap";
 
 export const metadata: Metadata = {
   title: "Contact Us",
@@ -136,39 +137,60 @@ export default function ContactPage() {
                   </div>
                 </div>
 
+                <div className="flex space-x-4">
+                  {socials.map((social) => (
+                    <a
+                      key={social.label}
+                      href="#"
+                      aria-label={social.label}
+                      className="w-10 h-10 rounded-full bg-surface flex items-center justify-center text-primary hover:text-secondary hover:shadow-soft transition-all"
+                    >
+                      <Icon name={social.icon} className="text-[20px]" />
+                    </a>
+                  ))}
+                </div>
               </div>
-            </div>
-
-            <div className="pt-6 border-t border-surface-variant">
-              <p className="text-label-caps uppercase tracking-[0.1em] font-bold text-primary mb-4">
-                Follow Our Journeys
-              </p>
-              <div className="flex space-x-4">
-                {socials.map((social) => (
-                  <a
-                    key={social.label}
-                    href="#"
-                    aria-label={social.label}
-                    className="w-10 h-10 rounded-full bg-surface flex items-center justify-center text-primary hover:text-secondary hover:shadow-soft transition-all"
-                  >
-                    <Icon name={social.icon} className="text-[20px]" />
-                  </a>
-                ))}
-              </div>
-            </div>
-
-            {/* Location visual */}
-            <div className="rounded-lg overflow-hidden border border-surface-variant bg-surface-container h-44 relative flex items-center justify-center">
-              <Icon name="map" className="!text-5xl text-surface-variant" />
-              <span className="absolute bottom-3 left-3 text-label-caps uppercase tracking-[0.1em] font-bold text-on-surface-variant bg-surface/80 backdrop-blur-sm px-2 py-1 rounded">
-                Mapo-Gu, Seoul
-              </span>
             </div>
           </div>
 
           {/* Inquiry form */}
           <div className="lg:col-span-8 bg-surface-container-lowest p-8 md:p-12 rounded-xl shadow-soft-lg">
             <ContactForm />
+          </div>
+        </div>
+
+        {/* Follow Our Journeys + Map (full-width row below the form) */}
+        <div className="mt-gutter grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+          {/* Follow Our Journeys */}
+          {/* <div className="lg:col-span-4 bg-surface-container-low p-8 rounded-xl shadow-soft-lg flex flex-col justify-center">
+            <p className="text-label-caps uppercase tracking-[0.1em] font-bold text-primary mb-4">
+              Follow Our Journeys
+            </p>
+            <div className="flex space-x-4">
+              {socials.map((social) => (
+                <a
+                  key={social.label}
+                  href="#"
+                  aria-label={social.label}
+                  className="w-10 h-10 rounded-full bg-surface flex items-center justify-center text-primary hover:text-secondary hover:shadow-soft transition-all"
+                >
+                  <Icon name={social.icon} className="text-[20px]" />
+                </a>
+              ))}
+            </div>
+          </div> */}
+
+          {/* Location map (Google Maps Embed API).
+              👉 EDIT THE COORDINATES BELOW to point the pin at your exact
+              office. In Google Maps, right-click the spot and click the
+              "37.5419, 126.9498" value at the top to copy the latitude, longitude. */}
+          <div className="lg:col-span-12 h-[380px] lg:h-[460px] rounded-xl overflow-hidden border border-surface-variant shadow-soft-lg">
+            <GoogleMap
+              lat={37.53996165086879}
+              lng={126.94705715073732}
+              zoom={17}
+              label="KOREA DMC – KOREA WITH SUE (KWS), Mapo-Gu, Seoul"
+            />
           </div>
         </div>
       </div>
