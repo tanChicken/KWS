@@ -1,24 +1,39 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import Icon from "@/components/Icon";
+import { getTranslations } from "next-intl/server";
+import { useTranslations } from "next-intl";
 import SectionHeader from "@/components/SectionHeader";
-import StatsSection from "@/components/StatsSection";
 import Button from "@/components/Button";
 
-export const metadata: Metadata = {
-  title: "About Us",
-  description:
-    "KWS DMC Korea is a premium Destination Management Company crafting bespoke journeys, exclusive access, and seamless travel across South Korea.",
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "AboutPage" });
+  return { title: t("storyTitle"), description: t("heroSubtitle") };
+}
+
+interface ExpertiseItem {
+  title: string;
+  text: string;
+}
 
 export default function AboutPage() {
+  const t = useTranslations("AboutPage");
+
+  const storyParagraphs = t.raw("storyParagraphs") as string[];
+  const leadershipParagraphs = t.raw("leadershipParagraphs") as string[];
+  const expertiseItems = t.raw("expertiseItems") as ExpertiseItem[];
+
   return (
     <>
       {/* Hero */}
       <section className="relative w-full h-[70vh] min-h-[520px] flex items-center justify-center overflow-hidden">
         <Image
           src="/assets/stitch/about-hero.jpg"
-          alt="Traditional Korean palace wall"
+          alt={t("heroAlt")}
           fill
           priority
           sizes="100vw"
@@ -26,11 +41,10 @@ export default function AboutPage() {
         />
         <div className="relative z-10 max-w-container mx-auto px-5 md:px-20 text-center">
           <h1 className="font-display text-display-lg-mobile md:text-display-lg text-on-primary mb-6">
-            Discover the Soul of Korea
+            {t("heroTitle")}
           </h1>
           <p className="text-body-lg text-on-primary/90 max-w-2xl mx-auto leading-relaxed">
-            Your premier gateway to bespoke journeys, exclusive access, and
-            seamless travel experiences across South Korea.
+            {t("heroSubtitle")}
           </p>
         </div>
         <div className="absolute bottom-0 w-full h-32 bg-gradient-to-t from-background to-transparent" />
@@ -42,19 +56,13 @@ export default function AboutPage() {
           <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
             <div className="lg:w-1/2 w-full space-y-8">
               <SectionHeader
-                eyebrow="ABOUT US"
-                title="Welcome to KWS DMC Korea"
+                eyebrow={t("storyEyebrow")}
+                title={t("storyTitle")}
               />
               <div className="space-y-6 text-on-surface-variant text-body-lg leading-relaxed -mt-10">
-                <p>
-                  Founded on 1 June 2026, KOREA DMC – KOREA WITH SUE (KWS) is a professional Destination Management Company (DMC) dedicated to delivering exceptional travel and event management services throughout Korea.
-                </p>
-                <p>
-                  Leveraging extensive industry expertise, strong local partnerships, and comprehensive destination knowledge, we provide customized solutions tailored to the unique objectives of our clients and partners. Our commitment to professionalism, operational excellence, and service quality enables us to deliver seamless experiences and successful outcomes across a wide range of travel and event programs.
-                </p>
-                <p>
-                  At KWS, we strive to create lasting value through innovative planning, meticulous execution, and personalized service, ensuring that every project is managed to the highest standards.
-                </p>
+                {storyParagraphs.map((paragraph, i) => (
+                  <p key={i}>{paragraph}</p>
+                ))}
               </div>
             </div>
             <div className="lg:w-1/2 w-full">
@@ -66,7 +74,7 @@ export default function AboutPage() {
                 <div className="relative w-full h-[420px] md:h-[600px] rounded overflow-hidden shadow-soft-lg">
                   <Image
                     src="/assets/stitch/about-temple.jpg"
-                    alt="Elegant Korean teahouse interior with warm sunlight through paper screens"
+                    alt={t("storyImageAlt")}
                     fill
                     sizes="(max-width: 1024px) 100vw, 50vw"
                     className="object-cover"
@@ -83,13 +91,16 @@ export default function AboutPage() {
         <div className="max-w-container mx-auto px-gutter">
           <div className="flex flex-col lg:flex-row gap-12 lg:gap-20 items-center">
             <div className="flex-1 space-y-6">
-              <h2 className="text-display-lg text-primary font-display">Leadership</h2>
-              <h3 className="text-headline-sm text-secondary">Ms. Sue Kim, Chief Executive Officer</h3>
+              <h2 className="text-display-lg text-primary font-display">
+                {t("leadershipTitle")}
+              </h2>
+              <h3 className="text-headline-sm text-secondary">
+                {t("leadershipName")}
+              </h3>
               <div className="space-y-4 text-body-md text-on-surface">
-                <p>KOREA DMC – KOREA WITH SUE (KWS) is led by Ms. Sue Kim, a highly respected tourism professional with more than 25 years of experience in the travel and hospitality industry.</p>
-                <p>Throughout her distinguished career, Ms. Kim has successfully designed and managed international MICE events, incentive programs, corporate meetings, educational tours, and luxury travel experiences for clients from around the world.</p>
-                <p>Her extensive industry expertise, strong supplier relationships, and unwavering commitment to service excellence have earned the trust and confidence of global partners and stakeholders.</p>
-                <p>Recognized for her professionalism, leadership, and dedication to quality, Ms. Kim brings a strategic and client-focused approach to every project. Her vision is to position KWS as a trusted and innovative destination management partner, delivering authentic Korean experiences and world-class travel solutions.</p>
+                {leadershipParagraphs.map((paragraph, i) => (
+                  <p key={i}>{paragraph}</p>
+                ))}
               </div>
             </div>
           </div>
@@ -100,21 +111,19 @@ export default function AboutPage() {
       <section className="py-20 bg-surface">
         <div className="max-w-container mx-auto px-gutter">
           <div className="text-center mb-16">
-            <h2 className="text-display-lg text-primary font-display">Our Expertise</h2>
+            <h2 className="text-display-lg text-primary font-display">
+              {t("expertiseTitle")}
+            </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[
-              { title: "MICE Solutions", text: "Professional planning and management of meetings, incentives, conferences, and exhibitions." },
-              { title: "Corporate Events", text: "Comprehensive event management services for corporate meetings, executive programs, and business events." },
-              { title: "Incentive Travel", text: "Customized travel experiences designed to motivate, reward, and inspire participants." },
-              { title: "Educational Programs", text: "Tailor-made educational tours, academic exchanges, and student travel programs." },
-              { title: "Luxury Travel", text: "Exclusive and personalized itineraries featuring premium accommodations, VIP services, and unique experiences." },
-              { title: "Cultural Experiences", text: "Authentic programs showcasing Korea{'s} rich heritage, culture, traditions, and lifestyle." },
-              { title: "Group & FIT Services", text: "Comprehensive travel arrangements for groups and independent travelers." },
-              { title: "Technical & Industry Visits", text: "Specialized programs providing access to Korea's leading industries, institutions, and innovation sectors." }
-            ].map((item, idx) => (
-              <div key={idx} className="bg-white p-8 rounded-2xl shadow-soft border border-outline-variant hover:shadow-soft-lg transition-shadow duration-300 flex flex-col h-full">
-                <h3 className="text-headline-sm text-primary font-display mb-3">{item.title}</h3>
+            {expertiseItems.map((item, idx) => (
+              <div
+                key={idx}
+                className="bg-white p-8 rounded-2xl shadow-soft border border-outline-variant hover:shadow-soft-lg transition-shadow duration-300 flex flex-col h-full"
+              >
+                <h3 className="text-headline-sm text-primary font-display mb-3">
+                  {item.title}
+                </h3>
                 <p className="text-body-md text-on-surface">{item.text}</p>
               </div>
             ))}
@@ -126,14 +135,13 @@ export default function AboutPage() {
       <section className="py-20 md:py-24 bg-background">
         <div className="max-w-container mx-auto px-5 md:px-20 text-center">
           <h2 className="font-display text-headline-md text-primary mb-4">
-            Let{"'"}s Craft Your Korea Story
+            {t("ctaTitle")}
           </h2>
           <p className="text-body-lg text-on-surface-variant max-w-xl mx-auto mb-8">
-            Speak with a consultant who knows every valley, table, and tide of
-            the peninsula.
+            {t("ctaSubtitle")}
           </p>
           <Button href="/contact" variant="primary">
-            Contact Us Now
+            {t("ctaButton")}
           </Button>
         </div>
       </section>

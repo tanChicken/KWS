@@ -116,5 +116,340 @@
     },
     "rights": "© 2026 KWS DMC Korea. All rights reserved.",
     "contactInfo": "Seoul, South Korea · kws@koreawithsue.co.kr · +82 2 703 9313"
+  },
+  "TourCard": {
+    "viewDetails": "View Details",
+    "bookNow": "Book Now",
+    "sendRequest": "Send Request",
+    "fromPrice": "From {price} / pp",
+    "tailoredQuote": "Tailored quote · On request"
+  },
+  "Badges": {
+    "Popular": "Popular",
+    "Signature": "Signature",
+    "Bestseller": "Bestseller"
+  },
+  "ToursPage": {
+    "title": "Best Selling Tours",
+    "subtitle": "Discover why thousands choose our handpicked journeys. Limited spots. Maximum impressions.",
+    "showing": "Showing {count} exclusive experiences"
+  },
+  "TourDetailPage": {
+    "home": "Home",
+    "tours": "Tours",
+    "itineraryHighlights": "Itinerary Highlights",
+    "day": "Day {day}",
+    "bookNow": "Book Now",
+    "ctaTitleFallback": "Ready to begin your journey?",
+    "ctaTextFallback": "Our expert advisors are ready to tailor this journey to your exact preferences."
+  },
+  "Tours": {
+    "seoul-heritage-culture-discovery": {
+      "title": "Seoul Heritage & Culture Discovery",
+      "excerpt": "A foundational journey through Korea's capital, blending royal heritage with the rhythms of modern Seoul.",
+      "duration": "5 Days / 4 Nights",
+      "route": "Seoul",
+      "tags": ["Cultural", "Group & FIT"],
+      "imageAlt": "Gyeongbokgung Palace in Seoul with traditional painted eaves at golden hour",
+      "cta": {
+        "title": "Ready to discover Seoul's heritage?",
+        "text": "This itinerary is a starting framework — durations, hotel grades, inclusions, and routing are fully tailored to your brief. Send us a request and we'll respond with a proposal within two business days."
+      },
+      "itinerary": [
+        { "location": "Seoul", "title": "Arrival & Welcome", "description": "Incheon Airport meet-and-greet and private transfer to your hotel in Myeongdong. Welcome dinner of Korean BBQ with a hanbok-clad host introducing Korean dining etiquette." },
+        { "location": "Seoul", "title": "Royal Seoul", "description": "Gyeongbokgung Palace with the Royal Guard Changing Ceremony, the National Folk Museum, a Bukchon Hanok Village walking tour with a licensed guide, and Insadong for traditional tea and crafts. Evening: the Nanta non-verbal performance." },
+        { "location": "Seoul", "title": "Spiritual & Scenic Seoul", "description": "Jogyesa Temple and a templestay introduction, N Seoul Tower via the Namsan cable car, and the Ihwa Mural Village. Dinner cruise on the Han River." },
+        { "location": "Seoul / DMZ", "title": "Living Seoul & the DMZ", "description": "A DMZ half-day tour (Imjingak, the Third Tunnel, Dora Observatory), then Dongdaemun Design Plaza and Gwangjang Market for street food. Farewell dinner: traditional Korean royal court cuisine (hanjeongsik)." },
+        { "location": "Seoul", "title": "Departure", "description": "Hotel check-out and private transfer to Incheon Airport." }
+      ]
+    },
+    "korea-grand-classic": {
+      "title": "Korea Grand Classic — Seoul, Jeonju & Busan",
+      "excerpt": "The signature cross-country circuit linking the capital, the spiritual south, and the coastal city.",
+      "duration": "8 Days / 7 Nights",
+      "route": "Seoul • Jeonju • Gyeongju • Busan",
+      "tags": ["Cultural", "Group & FIT"],
+      "imageAlt": "Seoul city skyline at dusk with mountains in the distance",
+      "cta": {
+        "title": "Ready for the grand circuit?",
+        "text": "This itinerary is a starting framework — durations, hotel grades, inclusions, and routing are fully tailored to your brief. Send us a request and we'll respond with a proposal within two business days."
+      },
+      "itinerary": [
+        { "location": "Seoul", "title": "Capital Highlights", "description": "Gyeongbokgung Palace, Bukchon Hanok Village, Myeongdong and Hongdae, a DMZ excursion, and a Han River cruise across three immersive days in Seoul." },
+        { "location": "Jeonju", "title": "Seoul → Jeonju by KTX", "description": "High-speed transfer to Jeonju. Explore the Hanok Village, a bibimbap cooking class, and a hanji paper workshop, with an overnight stay in a traditional hanok guesthouse." },
+        { "location": "Gyeongju", "title": "Jeonju → Gyeongju", "description": "Bulguksa Temple (UNESCO), the Seokguram Grotto, the Tumuli Park royal tombs, and the Cheomseongdae Observatory." },
+        { "location": "Busan", "title": "Gyeongju → Busan", "description": "Haedong Yonggungsa seaside temple, the colourful Gamcheon Culture Village, and the bustling Jagalchi Fish Market." },
+        { "location": "Busan", "title": "Coastal Busan", "description": "Haeundae Beach, BIFF Square, and Beomeosa Temple, with a farewell dinner at a hanwoo grill house." },
+        { "location": "Busan", "title": "Departure", "description": "Private transfer to Gimhae International Airport." }
+      ]
+    },
+    "k-wave-hallyu-experience": {
+      "title": "K-Wave Hallyu Experience",
+      "excerpt": "Built for fans of K-pop, K-drama, and Korean entertainment culture.",
+      "duration": "6 Days / 5 Nights",
+      "route": "Seoul • Nami Island",
+      "tags": ["K-Wave", "Cultural"],
+      "imageAlt": "Neon-lit Seoul street at night in the Hongdae entertainment district",
+      "cta": {
+        "title": "Ready to live the K-Wave?",
+        "text": "This itinerary is a starting framework — durations, hotel grades, inclusions, and routing are fully tailored to your brief. Send us a request and we'll respond with a proposal within two business days."
+      },
+      "itinerary": [
+        { "location": "Seoul", "title": "Arrival & Hongdae Nightlife", "description": "Arrival in Seoul followed by an evening among Hongdae's indie music streets and live busking performances." },
+        { "location": "Seoul", "title": "Entertainment District Tour", "description": "HYBE, SM, and JYP building exteriors in Yongsan and Seongsu, K-pop merch flagships, and lunch at an idol-frequented café. Afternoon dance class with a professional choreographer, then a live show in Hongdae." },
+        { "location": "Gapyeong", "title": "K-Drama Locations", "description": "Petite France and Nami Island — filming sites for Winter Sonata and many recent dramas — plus the Garden of Morning Calm." },
+        { "location": "Seoul", "title": "Style & Beauty", "description": "Olive Young flagship, an optional dermatology consultation, personal colour analysis, an Apgujeong-Rodeo styling tour, and dinner in Gangnam." },
+        { "location": "Seoul", "title": "Studio & Show", "description": "An SBS or KBS studio visit (subject to schedule), optional live music-show recording attendance, and a farewell dinner in Itaewon." },
+        { "location": "Seoul", "title": "Departure", "description": "Transfer to Incheon Airport." }
+      ]
+    },
+    "mice-incentive-premium-seoul": {
+      "title": "MICE & Incentive Program — Premium Seoul",
+      "excerpt": "A turnkey incentive framework for groups of 30–500, fully scalable.",
+      "duration": "5 Days / 4 Nights",
+      "route": "Seoul",
+      "tags": ["MICE", "Incentive", "Corporate"],
+      "imageAlt": "Corporate MICE event setup in a Seoul convention hall",
+      "cta": {
+        "title": "Planning an incentive or conference?",
+        "text": "This itinerary is a starting framework — durations, hotel grades, inclusions, and routing are fully tailored to your brief. Send us a request and we'll respond with a proposal within two business days."
+      },
+      "itinerary": [
+        { "location": "Seoul", "title": "Arrival & Welcome Reception", "description": "VIP airport fast-track, branded transfers, and a welcome cocktail on a 5-star hotel rooftop with a traditional samulnori percussion performance." },
+        { "location": "Seoul", "title": "Conference Day", "description": "Full-day plenary at a Seoul convention venue (COEX, Grand Walkerhall, or the Signiel ballroom) with professional AV and interpretation, themed coffee breaks, and a networking lunch. Evening gala dinner with a K-pop tribute performance and awards ceremony." },
+        { "location": "Seoul", "title": "Team Building & CSR", "description": "Choose a Korean cooking competition with a celebrity chef, a hanbok-and-hanok team challenge in Bukchon, or a CSR meal-kit packing activity for a partnered local charity. Evening free for networking." },
+        { "location": "Seoul", "title": "Reward Day", "description": "Half-day Seoul highlights, an afternoon at Hyundai Premium Outlet or Lotte Duty Free, and a farewell dinner cruise on the Han River with a fireworks finale (subject to permit)." },
+        { "location": "Seoul", "title": "Departure", "description": "VIP send-off and transfer to Incheon Airport." }
+      ]
+    },
+    "luxury-korea-private-journey": {
+      "title": "Luxury Korea — Private Curated Journey",
+      "excerpt": "A small-group or private itinerary built around premium hospitality and exclusive access.",
+      "duration": "7 Days / 6 Nights",
+      "route": "Seoul • Jeju",
+      "tags": ["Luxury", "Private"],
+      "imageAlt": "Premium concierge welcome amenities in a luxury Korean suite",
+      "cta": {
+        "title": "Ready for a private curated journey?",
+        "text": "This itinerary is a starting framework — durations, hotel grades, inclusions, and routing are fully tailored to your brief. Send us a request and we'll respond with a proposal within two business days."
+      },
+      "itinerary": [
+        { "location": "Seoul", "title": "Exclusive Seoul", "description": "Stay at the Signiel or Four Seasons with a private palace tour before public hours, a Michelin-starred dinner at Mingles or La Yeon, a private tea ceremony with a tea master, and a helicopter transfer to a private golf round at Anyang or Nine Bridges (seasonal)." },
+        { "location": "Jeju", "title": "Seoul → Jeju", "description": "Private jet or business-class flight to Jeju and check-in at the Grand Hyatt Jeju or Shilla Jeju." },
+        { "location": "Jeju", "title": "Island Indulgence", "description": "Private yacht charter along the southern coast, a guided Hallasan hike with a naturalist, a haenyeo abalone-diving demonstration, Michelin-recommended seafood omakase, and an oreum sunrise breakfast." },
+        { "location": "Jeju", "title": "Departure", "description": "Private transfer for your onward journey." }
+      ]
+    },
+    "korea-educational-program": {
+      "title": "Korea Educational Program — University & Industry",
+      "excerpt": "Designed for university cohorts, faculty-led groups, and student exchange programs.",
+      "duration": "7 Days / 6 Nights",
+      "route": "Seoul • Gyeonggi",
+      "tags": ["Educational", "Industry Visits"],
+      "imageAlt": "Students and visitors exploring a Korean cultural site",
+      "cta": {
+        "title": "Planning a study or exchange program?",
+        "text": "This itinerary is a starting framework — durations, hotel grades, inclusions, and routing are fully tailored to your brief. Send us a request and we'll respond with a proposal within two business days."
+      },
+      "itinerary": [
+        { "location": "Seoul", "title": "Arrival & Orientation", "description": "Arrival in Seoul and a program orientation session." },
+        { "location": "Seoul", "title": "University Campus Visits", "description": "Seoul National University and Yonsei or Korea University: lectures by partner faculty, student-ambassador campus tours, and lunch in the student cafeterias." },
+        { "location": "Seoul", "title": "Industry Innovation Day", "description": "Samsung d'light or Innovation Museum, LG Science Park, an optional Naver HQ tour, and a workshop with a Korean startup founder." },
+        { "location": "Seoul", "title": "Language & Culture Workshop", "description": "A half-day intensive at a partner language institute, plus hanbok, traditional games, and calligraphy." },
+        { "location": "Seoul", "title": "Heritage Context", "description": "Gyeongbokgung Palace, the National Museum of Korea, and the War Memorial of Korea for historical context." },
+        { "location": "Gyeonggi", "title": "Industrial Visit", "description": "Hyundai Motor Studio or the Pyeongtaek manufacturing facility (subject to corporate approval) and a DMZ educational tour." },
+        { "location": "Seoul", "title": "Reflection & Departure", "description": "A closing reflection session, certificate presentation, and departure." }
+      ]
+    },
+    "winter-korea-ski-snow": {
+      "title": "Winter Korea — Ski & Snow Festival",
+      "excerpt": "Seasonal program (December–February) combining alpine resort time with capital sightseeing.",
+      "duration": "6 Days / 5 Nights",
+      "route": "Seoul • Pyeongchang",
+      "tags": ["Seasonal", "Group & FIT"],
+      "imageAlt": "Snow-covered ski resort slopes in Pyeongchang at twilight with glowing cabins",
+      "cta": {
+        "title": "Ready to hit the slopes?",
+        "text": "This itinerary is a starting framework — durations, hotel grades, inclusions, and routing are fully tailored to your brief. Send us a request and we'll respond with a proposal within two business days."
+      },
+      "itinerary": [
+        { "location": "Seoul", "title": "Arrival in Seoul", "description": "Arrival and transfer to your Seoul hotel." },
+        { "location": "Pyeongchang", "title": "Seoul → Yongpyong Resort", "description": "Transfer to slope-side accommodation in Pyeongchang, with ski or snowboard rental and a lesson from an English-speaking instructor." },
+        { "location": "Pyeongchang", "title": "Full Ski Day", "description": "A full lift pass and lunch on the mountain, with optional snow tubing for non-skiers and an evening Korean BBQ." },
+        { "location": "Gangwon-do", "title": "Winter Festival", "description": "The Hwacheon Sancheoneo Ice Festival (January), or a Nami Island winter walk and the Garden of Morning Calm Lighting Festival, before returning to Seoul." },
+        { "location": "Seoul", "title": "Snowy Seoul", "description": "Gyeongbokgung in the snow, hanbok rental for photos, Myeongdong shopping, and a jjimjilbang (Korean spa) experience." },
+        { "location": "Seoul", "title": "Departure", "description": "Transfer to Incheon Airport." }
+      ]
+    },
+    "korea-culinary-journey": {
+      "title": "Korea Culinary Journey",
+      "excerpt": "A food-led itinerary across the peninsula's most distinctive regional cuisines.",
+      "duration": "6 Days / 5 Nights",
+      "route": "Seoul • Jeonju • Andong • Busan",
+      "tags": ["Culinary", "Cultural", "Luxury"],
+      "imageAlt": "Traditional Korean tea and regional dishes arranged in a sunlit setting",
+      "cta": {
+        "title": "Hungry to taste Korea?",
+        "text": "This itinerary is a starting framework — durations, hotel grades, inclusions, and routing are fully tailored to your brief. Send us a request and we'll respond with a proposal within two business days."
+      },
+      "itinerary": [
+        { "location": "Seoul", "title": "Seoul Arrival", "description": "Welcome dinner with a Gwangjang Market night food tour led by a local food writer." },
+        { "location": "Seoul", "title": "Seoul Foundations", "description": "A kimchi-making class at the Museum of Kimchi, a hanjeongsik royal court lunch, an afternoon café tour through Seongsu, and dinner at a Michelin-recommended modern Korean restaurant." },
+        { "location": "Jeonju", "title": "Jeonju by KTX", "description": "Bibimbap origin tasting, a makgeolli rice-wine brewery tour, and a hanok village street-food crawl." },
+        { "location": "Andong", "title": "Andong & Hahoe Village", "description": "Andong jjimdak cooking, the Hahoe Folk Village (UNESCO), and a soju distillery tour at the Andong Soju Museum." },
+        { "location": "Busan", "title": "Busan by KTX", "description": "An early-morning Jagalchi Fish Market tour, a hoe (raw fish) lunch, dwaeji gukbap tasting, and a farewell dinner at a hanwoo specialist." },
+        { "location": "Busan", "title": "Departure", "description": "Departure from Gimhae International Airport." }
+      ]
+    }
+  },
+  "Categories": {
+    "mice-solutions": {
+      "title": "MICE Solutions",
+      "description": "Professional planning and management of meetings, incentives, conferences, and exhibitions.",
+      "imageAlt": "Professional MICE event setup"
+    },
+    "corporate-events": {
+      "title": "Corporate Events",
+      "description": "Comprehensive event management services for corporate meetings, executive programs, and business events.",
+      "imageAlt": "Corporate business event"
+    },
+    "incentive-travel": {
+      "title": "Incentive Travel",
+      "description": "Customized travel experiences designed to motivate, reward, and inspire participants.",
+      "imageAlt": "Incentive travel group in Seoul"
+    },
+    "educational-programs": {
+      "title": "Educational Programs",
+      "description": "Tailor-made educational tours, academic exchanges, and student travel programs.",
+      "imageAlt": "Students on an educational program"
+    },
+    "luxury-travel": {
+      "title": "Luxury Travel",
+      "description": "Exclusive and personalized itineraries featuring premium accommodations, VIP services, and unique experiences.",
+      "imageAlt": "Luxury travel experience in Korea"
+    },
+    "cultural-experiences": {
+      "title": "Cultural Experiences",
+      "description": "Authentic programs showcasing Korea's rich heritage, culture, traditions, and lifestyle.",
+      "imageAlt": "Traditional Korean cultural experience"
+    },
+    "group-fit-services": {
+      "title": "Group & FIT Services",
+      "description": "Comprehensive travel arrangements for groups and independent travelers.",
+      "imageAlt": "Curated group and independent travel"
+    },
+    "technical-industry-visits": {
+      "title": "Technical & Industry Visits",
+      "description": "Specialized programs providing access to Korea's leading industries, institutions, and innovation sectors.",
+      "imageAlt": "Korean industry and innovation site"
+    }
+  },
+  "AboutPage": {
+    "heroAlt": "Traditional Korean palace wall",
+    "heroTitle": "Discover the Soul of Korea",
+    "heroSubtitle": "Your premier gateway to bespoke journeys, exclusive access, and seamless travel experiences across South Korea.",
+    "storyEyebrow": "ABOUT US",
+    "storyTitle": "Welcome to KWS DMC Korea",
+    "storyImageAlt": "Elegant Korean teahouse interior with warm sunlight through paper screens",
+    "storyParagraphs": [
+      "Founded on 1 June 2026, KOREA DMC – KOREA WITH SUE (KWS) is a professional Destination Management Company (DMC) dedicated to delivering exceptional travel and event management services throughout Korea.",
+      "Leveraging extensive industry expertise, strong local partnerships, and comprehensive destination knowledge, we provide customized solutions tailored to the unique objectives of our clients and partners. Our commitment to professionalism, operational excellence, and service quality enables us to deliver seamless experiences and successful outcomes across a wide range of travel and event programs.",
+      "At KWS, we strive to create lasting value through innovative planning, meticulous execution, and personalized service, ensuring that every project is managed to the highest standards."
+    ],
+    "leadershipTitle": "Leadership",
+    "leadershipName": "Ms. Sue Kim, Chief Executive Officer",
+    "leadershipParagraphs": [
+      "KOREA DMC – KOREA WITH SUE (KWS) is led by Ms. Sue Kim, a highly respected tourism professional with more than 25 years of experience in the travel and hospitality industry.",
+      "Throughout her distinguished career, Ms. Kim has successfully designed and managed international MICE events, incentive programs, corporate meetings, educational tours, and luxury travel experiences for clients from around the world.",
+      "Her extensive industry expertise, strong supplier relationships, and unwavering commitment to service excellence have earned the trust and confidence of global partners and stakeholders.",
+      "Recognized for her professionalism, leadership, and dedication to quality, Ms. Kim brings a strategic and client-focused approach to every project. Her vision is to position KWS as a trusted and innovative destination management partner, delivering authentic Korean experiences and world-class travel solutions."
+    ],
+    "expertiseTitle": "Our Expertise",
+    "expertiseItems": [
+      { "title": "MICE Solutions", "text": "Professional planning and management of meetings, incentives, conferences, and exhibitions." },
+      { "title": "Corporate Events", "text": "Comprehensive event management services for corporate meetings, executive programs, and business events." },
+      { "title": "Incentive Travel", "text": "Customized travel experiences designed to motivate, reward, and inspire participants." },
+      { "title": "Educational Programs", "text": "Tailor-made educational tours, academic exchanges, and student travel programs." },
+      { "title": "Luxury Travel", "text": "Exclusive and personalized itineraries featuring premium accommodations, VIP services, and unique experiences." },
+      { "title": "Cultural Experiences", "text": "Authentic programs showcasing Korea's rich heritage, culture, traditions, and lifestyle." },
+      { "title": "Group & FIT Services", "text": "Comprehensive travel arrangements for groups and independent travelers." },
+      { "title": "Technical & Industry Visits", "text": "Specialized programs providing access to Korea's leading industries, institutions, and innovation sectors." }
+    ],
+    "ctaTitle": "Let's Craft Your Korea Story",
+    "ctaSubtitle": "Speak with a consultant who knows every valley, table, and tide of the peninsula.",
+    "ctaButton": "Contact Us Now"
+  },
+  "FAQPage": {
+    "eyebrow": "Support",
+    "title": "Frequently Asked Questions",
+    "subtitle": "Everything you need to know before entrusting us with your journey. Can't find your answer? Our consultants reply within 24 hours.",
+    "items": [
+      {
+        "question": "Do you work with individual travelers as well as travel agencies?",
+        "answer": "Yes. We operate as a premier gateway for both sectors. For B2B partners (travel agencies, corporate planners), we offer comprehensive ground handling, MICE logistics, and white-label services. For individual travelers, we craft bespoke luxury itineraries ensuring a seamless and authentic Korean experience."
+      },
+      {
+        "question": "How do you accommodate dietary restrictions (Halal, Vegan, Kosher)?",
+        "answer": "We pride ourselves on our meticulous attention to dietary needs. We maintain a curated network of certified Halal, premium vegan, and specialized restaurants across Korea. Your dedicated travel consultant will ensure all culinary experiences align strictly with your dietary requirements without compromising on the richness of Korean gastronomy."
+      },
+      {
+        "question": "What categories of hotels do you partner with?",
+        "answer": "Our portfolio focuses on premium accommodations ranging from upscale 4-star boutique hotels to globally renowned 5-star luxury properties. We also offer exclusive stays in high-end traditional Hanoks for those seeking culturally immersive experiences with modern comforts."
+      },
+      {
+        "question": "What is generally included in your tour packages?",
+        "answer": "Standard inclusions typically cover premium accommodation, private transfers via luxury vehicles, services of an expert English-speaking guide (other languages available upon request), entrance fees to curated attractions, and select dining experiences. International airfare and personal expenses are generally excluded."
+      },
+      {
+        "question": "Can I fully customize my itinerary?",
+        "answer": "Absolutely. While we offer expertly designed pre-set tours, customization is our specialty. Whether you wish to focus on K-Culture, medical wellness, historical exploration, or a mix of everything, our consultants will tailor every aspect — from pace to specific interests — ensuring a truly personalized journey."
+      }
+    ],
+    "stillHaveQuestionsTitle": "Still Have Questions?",
+    "stillHaveQuestionsText": "Whether you are an individual traveler or a partner agency, our team is ready to help you plan with confidence.",
+    "contactTeam": "Contact Our Team"
+  },
+  "ContactPage": {
+    "heroTitle": "Plan your next adventure with us.",
+    "heroSubtitle": "Trusted guides, flexible packages, and authentic Korea experiences await you. Get in touch today.",
+    "contactInformation": "Contact Information",
+    "companyLabel": "Company",
+    "companyName": "KOREA DMC – KOREA WITH SUE (KWS)",
+    "addressLabel": "Address",
+    "addressValue": "#802 Jindo Bldg., Mapo-Daero 44, Mapo-Gu, Seoul, Korea",
+    "addressValue2": "04174 Seoul, Republic of Korea",
+    "contactPersonLabel": "Contact Person",
+    "contactPersonName": "Sue Kim",
+    "contactPersonTitle": "Chief Executive Officer",
+    "phoneLabel": "Phone",
+    "phoneMobile": "Mobile: +82 10 6425 9313",
+    "phoneTel": "Telephone: +82 2 703 9313",
+    "emailLabel": "Email",
+    "websiteLabel": "Website",
+    "followOurJourneys": "Follow Our Journeys",
+    "mapLabel": "KOREA DMC – KOREA WITH SUE (KWS), Mapo-Gu, Seoul"
+  },
+  "ContactForm": {
+    "nameLabel": "Full Name / Agency",
+    "namePlaceholder": "please enter your full name or agency name",
+    "emailLabel": "Email Address",
+    "emailPlaceholder": "please enter your email address",
+    "phoneLabel": "Phone Number",
+    "phonePlaceholder": "please enter your phone number",
+    "inquiryLabel": "Inquiry Type",
+    "inquirySelect": "Select an option",
+    "inquiryOptions": {
+      "leisure": "Leisure Travel",
+      "mice": "MICE (Meetings, Incentives, Conferences, Exhibitions)",
+      "medical": "Medical Tourism",
+      "custom": "Custom Itinerary",
+      "partnership": "B2B Partnership"
+    },
+    "messageLabel": "Your Message",
+    "messagePlaceholder": "Tell us about your ideal Korean experience...",
+    "submit": "Submit Inquiry",
+    "sending": "Sending…",
+    "success": "Thank you — our travel consultants will be in touch within 24 hours.",
+    "error": "Something went wrong. Please try again."
   }
 }

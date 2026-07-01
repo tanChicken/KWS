@@ -1,13 +1,19 @@
 import type { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
+import { useTranslations } from "next-intl";
 import ContactForm from "@/components/ContactForm";
 import Icon from "@/components/Icon";
 import GoogleMap from "@/components/GoogleMap";
 
-export const metadata: Metadata = {
-  title: "Contact Us",
-  description:
-    "Get in touch with KOREA DMC – KOREA WITH SUE (KWS) — trusted guides, flexible packages, and authentic Korea experiences for travelers and agencies.",
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "ContactPage" });
+  return { title: t("heroTitle"), description: t("heroSubtitle") };
+}
 
 const socials = [
   { icon: "photo_camera", label: "Instagram" },
@@ -16,18 +22,17 @@ const socials = [
 ];
 
 export default function ContactPage() {
+  const t = useTranslations("ContactPage");
+
   return (
     <div className="pt-12 pb-20 md:pb-section-gap">
       <div className="max-w-container mx-auto px-5 md:px-20">
         {/* Hero header */}
         <div className="text-center mb-16 max-w-3xl mx-auto">
           <h1 className="font-display text-display-lg-mobile md:text-display-lg text-primary mb-6">
-            Plan your next adventure with us.
+            {t("heroTitle")}
           </h1>
-          <p className="text-body-lg text-on-surface-variant">
-            Trusted guides, flexible packages, and authentic Korea experiences
-            await you. Get in touch today.
-          </p>
+          <p className="text-body-lg text-on-surface-variant">{t("heroSubtitle")}</p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
@@ -35,19 +40,18 @@ export default function ContactPage() {
           <div className="lg:col-span-4 space-y-12 bg-surface-container-low p-8 rounded-xl shadow-soft-lg">
             <div>
               <h2 className="font-display text-headline-sm text-primary mb-6">
-                Contact Information
+                {t("contactInformation")}
               </h2>
               <div className="space-y-6">
-                
                 {/* Company */}
                 <div className="flex items-start space-x-4">
                   <Icon name="business" className="text-secondary mt-1" />
                   <div>
                     <p className="text-label-caps uppercase tracking-[0.1em] font-bold text-primary mb-1">
-                      Company
+                      {t("companyLabel")}
                     </p>
                     <p className="text-body-md text-on-surface-variant font-medium">
-                      KOREA DMC – KOREA WITH SUE (KWS)
+                      {t("companyName")}
                     </p>
                   </div>
                 </div>
@@ -57,12 +61,12 @@ export default function ContactPage() {
                   <Icon name="location_on" className="text-secondary mt-1" />
                   <div>
                     <p className="text-label-caps uppercase tracking-[0.1em] font-bold text-primary mb-1">
-                      Address
+                      {t("addressLabel")}
                     </p>
                     <p className="text-body-md text-on-surface-variant">
-                      #802 Jindo Bldg., Mapo-Daero 44, Mapo-Gu, Seoul, Korea
+                      {t("addressValue")}
                       <br />
-                      04174 Seoul, Republic of Korea
+                      {t("addressValue2")}
                     </p>
                   </div>
                 </div>
@@ -72,12 +76,12 @@ export default function ContactPage() {
                   <Icon name="person" className="text-secondary mt-1" />
                   <div>
                     <p className="text-label-caps uppercase tracking-[0.1em] font-bold text-primary mb-1">
-                      Contact Person
+                      {t("contactPersonLabel")}
                     </p>
                     <p className="text-body-md text-on-surface-variant">
-                      <span className="font-medium">Sue Kim</span>
+                      <span className="font-medium">{t("contactPersonName")}</span>
                       <br />
-                      Chief Executive Officer
+                      {t("contactPersonTitle")}
                     </p>
                   </div>
                 </div>
@@ -87,12 +91,12 @@ export default function ContactPage() {
                   <Icon name="phone" className="text-secondary mt-1" />
                   <div>
                     <p className="text-label-caps uppercase tracking-[0.1em] font-bold text-primary mb-1">
-                      Phone
+                      {t("phoneLabel")}
                     </p>
                     <p className="text-body-md text-on-surface-variant">
-                      Mobile: +82 10 6425 9313
+                      {t("phoneMobile")}
                       <br />
-                      Telephone: +82 2 703 9313
+                      {t("phoneTel")}
                     </p>
                   </div>
                 </div>
@@ -102,7 +106,7 @@ export default function ContactPage() {
                   <Icon name="mail" className="text-secondary mt-1" />
                   <div>
                     <p className="text-label-caps uppercase tracking-[0.1em] font-bold text-primary mb-1">
-                      Email
+                      {t("emailLabel")}
                     </p>
                     <a
                       href="mailto:kws@koreawithsue.co.kr"
@@ -124,7 +128,7 @@ export default function ContactPage() {
                   <Icon name="language" className="text-secondary mt-1" />
                   <div>
                     <p className="text-label-caps uppercase tracking-[0.1em] font-bold text-primary mb-1">
-                      Website
+                      {t("websiteLabel")}
                     </p>
                     <a
                       href="https://www.koreawithsue.com"
@@ -159,27 +163,8 @@ export default function ContactPage() {
           </div>
         </div>
 
-        {/* Follow Our Journeys + Map (full-width row below the form) */}
+        {/* Map (full-width row below the form) */}
         <div className="mt-gutter grid grid-cols-1 lg:grid-cols-12 gap-gutter">
-          {/* Follow Our Journeys */}
-          {/* <div className="lg:col-span-4 bg-surface-container-low p-8 rounded-xl shadow-soft-lg flex flex-col justify-center">
-            <p className="text-label-caps uppercase tracking-[0.1em] font-bold text-primary mb-4">
-              Follow Our Journeys
-            </p>
-            <div className="flex space-x-4">
-              {socials.map((social) => (
-                <a
-                  key={social.label}
-                  href="#"
-                  aria-label={social.label}
-                  className="w-10 h-10 rounded-full bg-surface flex items-center justify-center text-primary hover:text-secondary hover:shadow-soft transition-all"
-                >
-                  <Icon name={social.icon} className="text-[20px]" />
-                </a>
-              ))}
-            </div>
-          </div> */}
-
           {/* Location map (Google Maps Embed API).
               👉 EDIT THE COORDINATES BELOW to point the pin at your exact
               office. In Google Maps, right-click the spot and click the
@@ -189,7 +174,7 @@ export default function ContactPage() {
               lat={37.53996165086879}
               lng={126.94705715073732}
               zoom={17}
-              label="KOREA DMC – KOREA WITH SUE (KWS), Mapo-Gu, Seoul"
+              label={t("mapLabel")}
             />
           </div>
         </div>

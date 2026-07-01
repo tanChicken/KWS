@@ -116,5 +116,340 @@
     },
     "rights": "© 2026 KWS DMC Korea. 保留所有权利。",
     "contactInfo": "韩国首尔 · kws@koreawithsue.co.kr · +82 2 703 9313"
+  },
+  "TourCard": {
+    "viewDetails": "查看详情",
+    "bookNow": "立即预订",
+    "sendRequest": "发送咨询",
+    "fromPrice": "每人 {price} 起",
+    "tailoredQuote": "定制报价 · 询价"
+  },
+  "Badges": {
+    "Popular": "热门",
+    "Signature": "招牌",
+    "Bestseller": "畅销"
+  },
+  "ToursPage": {
+    "title": "畅销行程",
+    "subtitle": "了解为什么众多旅客选择我们精心挑选的旅程。名额有限，令人印象深刻。",
+    "showing": "共 {count} 项专属体验"
+  },
+  "TourDetailPage": {
+    "home": "首页",
+    "tours": "行程",
+    "itineraryHighlights": "行程亮点",
+    "day": "第 {day} 天",
+    "bookNow": "立即预订",
+    "ctaTitleFallback": "准备好开启您的旅程了吗？",
+    "ctaTextFallback": "我们的专业顾问随时为您量身打造这段旅程，完全贴合您的偏好。"
+  },
+  "Tours": {
+    "seoul-heritage-culture-discovery": {
+      "title": "首尔遗产与文化探索",
+      "excerpt": "融合王室遗产与现代首尔活力，探索韩国首都的经典入门之旅。",
+      "duration": "5天4晚",
+      "route": "首尔",
+      "tags": ["文化", "团队 & 散客"],
+      "imageAlt": "黄金时分、传统丹青彩绘交相辉映的首尔景福宫",
+      "cta": {
+        "title": "准备好探索首尔的遗产了吗？",
+        "text": "此行程为基础框架 —— 天数、酒店等级、包含项目及路线均可根据您的需求完全定制。请向我们发送咨询，我们将在两个工作日内回复方案。"
+      },
+      "itinerary": [
+        { "location": "首尔", "title": "抵达与欢迎", "description": "仁川机场接机并专车送往明洞酒店。身着韩服的主人在韩式烤肉欢迎晚宴上介绍韩国用餐礼仪。" },
+        { "location": "首尔", "title": "王室首尔", "description": "景福宫王宫守门将换岗仪式、国立民俗博物馆、由持证向导带领的北村韩屋村徒步游，以及品味传统茶与手工艺的仁寺洞。晚间观赏无对白表演《乱打》。" },
+        { "location": "首尔", "title": "古刹与美景首尔", "description": "曹溪寺及寺院寄宿体验介绍、乘南山缆车登上 N 首尔塔、梨花壁画村。汉江晚餐游船。" },
+        { "location": "首尔 / DMZ", "title": "生活首尔与 DMZ", "description": "DMZ 半日游（临津阁、第三隧道、都罗展望台），随后前往东大门设计广场和广藏市场品尝街头美食。告别晚宴：传统韩定食（宫廷料理）。" },
+        { "location": "首尔", "title": "送机", "description": "酒店退房并专车送往仁川机场。" }
+      ]
+    },
+    "korea-grand-classic": {
+      "title": "韩国经典大环线 —— 首尔、全州和釜山",
+      "excerpt": "串联首都、精神南部与海滨城市的招牌跨国环线。",
+      "duration": "8天7晚",
+      "route": "首尔 • 全州 • 庆州 • 釜山",
+      "tags": ["文化", "团队 & 散客"],
+      "imageAlt": "暮色中以群山为背景的首尔都市天际线",
+      "cta": {
+        "title": "准备好开启经典大环线了吗？",
+        "text": "此行程为基础框架 —— 天数、酒店等级、包含项目及路线均可根据您的需求完全定制。请向我们发送咨询，我们将在两个工作日内回复方案。"
+      },
+      "itinerary": [
+        { "location": "首尔", "title": "首都精华", "description": "景福宫、北村韩屋村、明洞与弘大、DMZ 考察及汉江游船，在首尔度过沉浸式的三天。" },
+        { "location": "全州", "title": "KTX 首尔 → 全州", "description": "乘 KTX 高速前往全州。游览韩屋村、参加拌饭烹饪课与韩纸手工坊，并入住传统韩屋民宿一晚。" },
+        { "location": "庆州", "title": "全州 → 庆州", "description": "佛国寺（联合国教科文组织世界遗产）、石窟庵、大陵苑王陵与瞻星台。" },
+        { "location": "釜山", "title": "庆州 → 釜山", "description": "海东龙宫寺海滨寺庙、色彩缤纷的甘川文化村，以及热闹的札嘎其鱼市。" },
+        { "location": "釜山", "title": "海滨釜山", "description": "海云台海滩、BIFF 广场、梵鱼寺，并在韩牛烧烤店享用告别晚宴。" },
+        { "location": "釜山", "title": "送机", "description": "专车送往金海国际机场。" }
+      ]
+    },
+    "k-wave-hallyu-experience": {
+      "title": "韩流 K-Wave 体验",
+      "excerpt": "为 K-Pop、韩剧及韩国娱乐文化的粉丝量身打造。",
+      "duration": "6天5晚",
+      "route": "首尔 • 南怡岛",
+      "tags": ["韩流", "文化"],
+      "imageAlt": "夜晚霓虹闪烁的弘大娱乐街区",
+      "cta": {
+        "title": "准备好亲身体验韩流了吗？",
+        "text": "此行程为基础框架 —— 天数、酒店等级、包含项目及路线均可根据您的需求完全定制。请向我们发送咨询，我们将在两个工作日内回复方案。"
+      },
+      "itinerary": [
+        { "location": "首尔", "title": "抵达与弘大夜生活", "description": "抵达首尔后，于弘大独立音乐街区享受夜晚，观赏现场街头表演。" },
+        { "location": "首尔", "title": "娱乐街区之旅", "description": "参观龙山与圣水的 HYBE、SM、JYP 公司大楼外观、K-Pop 周边旗舰店，并在偶像常去的咖啡馆用午餐。下午参加专业编舞师的舞蹈课，随后观赏弘大现场演出。" },
+        { "location": "加平", "title": "韩剧取景地", "description": "《冬季恋歌》等众多热门韩剧的取景地小法国村与南怡岛，以及晨静树木园。" },
+        { "location": "首尔", "title": "造型与美妆", "description": "Olive Young 旗舰店、可选皮肤科咨询、个人色彩诊断、狎鸥亭罗德奥造型之旅，并在江南享用晚餐。" },
+        { "location": "首尔", "title": "摄影棚与节目", "description": "参观 SBS 或 KBS 摄影棚（视排期而定）、可选音乐节目录制观摩，并在梨泰院享用告别晚宴。" },
+        { "location": "首尔", "title": "送机", "description": "送往仁川机场。" }
+      ]
+    },
+    "mice-incentive-premium-seoul": {
+      "title": "MICE 与奖励旅游项目 —— 尊享首尔",
+      "excerpt": "可完全灵活扩展、适用于 30 至 500 人团队的一站式奖励旅游方案。",
+      "duration": "5天4晚",
+      "route": "首尔",
+      "tags": ["MICE", "奖励旅游", "企业"],
+      "imageAlt": "首尔会议厅内的企业 MICE 活动布置",
+      "cta": {
+        "title": "正在筹划奖励旅游或会议吗？",
+        "text": "此行程为基础框架 —— 天数、酒店等级、包含项目及路线均可根据您的需求完全定制。请向我们发送咨询，我们将在两个工作日内回复方案。"
+      },
+      "itinerary": [
+        { "location": "首尔", "title": "抵达与欢迎酒会", "description": "VIP 机场快速通道、品牌专车接送，并在五星级酒店顶楼举行欢迎鸡尾酒会，伴以传统四物游戏打击乐表演。" },
+        { "location": "首尔", "title": "会议日", "description": "在首尔会议场馆（COEX、华克山庄大酒店或 Signiel 宴会厅）举行全天全体会议，配备专业视听与同声传译、主题茶歇及交流午宴。晚间举行含 K-Pop 致敬表演与颁奖典礼的晚宴。" },
+        { "location": "首尔", "title": "团队建设与 CSR", "description": "可选择与明星主厨一同进行韩餐烹饪比赛、于北村进行韩服与韩屋团队挑战，或为合作本地慈善机构包装餐包的 CSR 活动。晚间自由交流。" },
+        { "location": "首尔", "title": "奖励日", "description": "半日首尔精华游、下午前往现代高级奥特莱斯或乐天免税店，并在汉江享用配有烟花压轴（视许可而定）的告别晚宴游船。" },
+        { "location": "首尔", "title": "送机", "description": "VIP 欢送并送往仁川机场。" }
+      ]
+    },
+    "luxury-korea-private-journey": {
+      "title": "奢华韩国 —— 私人定制之旅",
+      "excerpt": "围绕尊贵礼遇与专属体验打造的小型团队或私人行程。",
+      "duration": "7天6晚",
+      "route": "首尔 • 济州",
+      "tags": ["奢华", "私人"],
+      "imageAlt": "奢华韩国套房内的高端礼宾欢迎礼遇",
+      "cta": {
+        "title": "准备好开启私人定制之旅了吗？",
+        "text": "此行程为基础框架 —— 天数、酒店等级、包含项目及路线均可根据您的需求完全定制。请向我们发送咨询，我们将在两个工作日内回复方案。"
+      },
+      "itinerary": [
+        { "location": "首尔", "title": "尊享首尔", "description": "入住 Signiel 或四季酒店，享开馆前私人宫殿导览、于 Mingles 或 La Yeon 享用米其林星级晚宴、与茶艺大师进行私人茶道，并乘直升机前往安养或 Nine Bridges 私人高尔夫（视季节而定）。" },
+        { "location": "济州", "title": "首尔 → 济州", "description": "乘私人飞机或商务舱前往济州，入住济州君悦或新罗酒店。" },
+        { "location": "济州", "title": "海岛尊享", "description": "南部海岸私人游艇包船、与自然解说员同行的汉拿山向导徒步、海女鲍鱼采捕表演、米其林推荐海鲜割烹，以及火山锥（오름）日出早餐。" },
+        { "location": "济州", "title": "送机", "description": "专车送往下一段旅程。" }
+      ]
+    },
+    "korea-educational-program": {
+      "title": "韩国教育项目 —— 大学与产业",
+      "excerpt": "专为大学团队、教师带队团及学生交流项目设计。",
+      "duration": "7天6晚",
+      "route": "首尔 • 京畿",
+      "tags": ["教育", "产业考察"],
+      "imageAlt": "在韩国文化景点参观游览的学生与访客",
+      "cta": {
+        "title": "正在筹划研学或交流项目吗？",
+        "text": "此行程为基础框架 —— 天数、酒店等级、包含项目及路线均可根据您的需求完全定制。请向我们发送咨询，我们将在两个工作日内回复方案。"
+      },
+      "itinerary": [
+        { "location": "首尔", "title": "抵达与说明会", "description": "抵达首尔并进行项目说明会。" },
+        { "location": "首尔", "title": "大学校园参访", "description": "首尔大学与延世大学或高丽大学：合作教师授课、学生大使带领的校园导览，以及在学生食堂用午餐。" },
+        { "location": "首尔", "title": "产业创新日", "description": "三星 d'light 或创新博物馆、LG 科学园、可选 NAVER 总部参观，以及与韩国初创企业创始人的工作坊。" },
+        { "location": "首尔", "title": "语言与文化工作坊", "description": "在合作语言学院进行半日强化课程，以及韩服、传统游戏与书法体验。" },
+        { "location": "首尔", "title": "历史脉络", "description": "景福宫、韩国国立中央博物馆，以及提供历史背景的战争纪念馆。" },
+        { "location": "京畿", "title": "产业考察", "description": "现代汽车工作室或平泽制造工厂（需企业批准）及 DMZ 教育之旅。" },
+        { "location": "首尔", "title": "总结与送机", "description": "结业总结环节、颁发结业证书并送机。" }
+      ]
+    },
+    "winter-korea-ski-snow": {
+      "title": "冬季韩国 —— 滑雪与雪花庆典",
+      "excerpt": "结合高山度假村与首都观光的季节限定项目（12月至2月）。",
+      "duration": "6天5晚",
+      "route": "首尔 • 平昌",
+      "tags": ["季节限定", "团队 & 散客"],
+      "imageAlt": "暮色中木屋亮起灯光、白雪覆盖的平昌滑雪度假村雪道",
+      "cta": {
+        "title": "准备好驰骋雪场了吗？",
+        "text": "此行程为基础框架 —— 天数、酒店等级、包含项目及路线均可根据您的需求完全定制。请向我们发送咨询，我们将在两个工作日内回复方案。"
+      },
+      "itinerary": [
+        { "location": "首尔", "title": "抵达首尔", "description": "抵达后送往首尔酒店。" },
+        { "location": "平昌", "title": "首尔 → 龙平度假村", "description": "前往平昌雪道旁住宿，并由英语教练提供滑雪或单板租赁与教学。" },
+        { "location": "平昌", "title": "全日滑雪", "description": "全日缆车票与山顶午餐，为非滑雪者提供可选雪圈项目，晚间韩式烤肉。" },
+        { "location": "江原道", "title": "冬季庆典", "description": "华川冰鱼庆典（1月），或南怡岛冬季漫步与晨静树木园五色星光庭园展，之后返回首尔。" },
+        { "location": "首尔", "title": "雪中首尔", "description": "雪景中的景福宫、租借韩服拍照、明洞购物，以及汗蒸幕体验。" },
+        { "location": "首尔", "title": "送机", "description": "送往仁川机场。" }
+      ]
+    },
+    "korea-culinary-journey": {
+      "title": "韩国美食之旅",
+      "excerpt": "沿着半岛最具特色的地方美食展开的美食主题之旅。",
+      "duration": "6天5晚",
+      "route": "首尔 • 全州 • 安东 • 釜山",
+      "tags": ["美食", "文化", "奢华"],
+      "imageAlt": "阳光下精致摆放的韩国传统茶与地方佳肴",
+      "cta": {
+        "title": "准备好品味韩国美食了吗？",
+        "text": "此行程为基础框架 —— 天数、酒店等级、包含项目及路线均可根据您的需求完全定制。请向我们发送咨询，我们将在两个工作日内回复方案。"
+      },
+      "itinerary": [
+        { "location": "首尔", "title": "抵达首尔", "description": "由当地美食作家带领的广藏市场夜宵之旅欢迎晚宴。" },
+        { "location": "首尔", "title": "首尔根基", "description": "泡菜博物馆的泡菜制作课、宫廷韩定食午宴、圣水洞咖啡馆之旅，并在米其林推荐的现代韩餐厅享用晚餐。" },
+        { "location": "全州", "title": "KTX 前往全州", "description": "拌饭发源地品尝、马格利米酒酿造厂之旅，以及韩屋村街头美食巡礼。" },
+        { "location": "安东", "title": "安东与河回村", "description": "安东炖鸡烹饪、河回民俗村（联合国教科文组织世界遗产），以及安东烧酒博物馆的酿造厂之旅。" },
+        { "location": "釜山", "title": "KTX 前往釜山", "description": "清晨札嘎其鱼市之旅、生鱼片午餐、猪肉汤饭品尝，并在韩牛专门店享用告别晚宴。" },
+        { "location": "釜山", "title": "送机", "description": "从金海国际机场出发。" }
+      ]
+    }
+  },
+  "Categories": {
+    "mice-solutions": {
+      "title": "MICE 解决方案",
+      "description": "专业策划与管理会议、奖励、大会及展览。",
+      "imageAlt": "专业的 MICE 活动布置"
+    },
+    "corporate-events": {
+      "title": "企业活动",
+      "description": "为企业会议、高管项目与商务活动提供全面的活动管理服务。",
+      "imageAlt": "企业商务活动"
+    },
+    "incentive-travel": {
+      "title": "奖励旅游",
+      "description": "旨在激励、奖赏并启发参与者的定制旅行体验。",
+      "imageAlt": "首尔的奖励旅游团"
+    },
+    "educational-programs": {
+      "title": "教育项目",
+      "description": "量身定制的教育考察、学术交流与学生旅行项目。",
+      "imageAlt": "参加教育项目的学生"
+    },
+    "luxury-travel": {
+      "title": "奢华旅行",
+      "description": "配备高端住宿、VIP 服务与独特体验的专属个性化行程。",
+      "imageAlt": "韩国的奢华旅行体验"
+    },
+    "cultural-experiences": {
+      "title": "文化体验",
+      "description": "展现韩国丰富遗产、文化、传统与生活方式的地道项目。",
+      "imageAlt": "韩国传统文化体验"
+    },
+    "group-fit-services": {
+      "title": "团队与散客服务",
+      "description": "为团队及独立旅客提供全面的旅行安排。",
+      "imageAlt": "团队与散客定制旅行"
+    },
+    "technical-industry-visits": {
+      "title": "产业考察与技术参访",
+      "description": "提供接触韩国领先产业、机构与创新领域机会的专项项目。",
+      "imageAlt": "韩国的产业与创新现场"
+    }
+  },
+  "AboutPage": {
+    "heroAlt": "韩国传统宫殿围墙",
+    "heroTitle": "探寻韩国之魂",
+    "heroSubtitle": "为您呈献定制旅程、专属通道与畅顺旅行体验的韩国首选门户。",
+    "storyEyebrow": "关于我们",
+    "storyTitle": "欢迎来到 KWS DMC Korea",
+    "storyImageAlt": "暖阳透过纸窗洒入的优雅韩国茶馆内景",
+    "storyParagraphs": [
+      "成立于 2026 年 6 月 1 日，KOREA DMC – KOREA WITH SUE (KWS) 是一家专业的目的地管理公司 (DMC)，致力于在韩国全境提供卓越的旅行与活动管理服务。",
+      "凭借深厚的行业专业、稳固的本地合作网络与全面的目的地知识，我们为客户与合作伙伴的独特目标提供量身定制的解决方案。我们对专业精神、卓越运营与服务品质的坚持，使我们能够在各类旅行与活动项目中交付畅顺的体验与成功的成果。",
+      "在 KWS，我们通过创新的策划、缜密的执行与个性化的服务创造持久价值，确保每一个项目都以最高标准管理。"
+    ],
+    "leadershipTitle": "领导团队",
+    "leadershipName": "Sue Kim 女士，首席执行官",
+    "leadershipParagraphs": [
+      "KOREA DMC – KOREA WITH SUE (KWS) 由 Sue Kim 女士领导，她是一位备受敬重的旅游业专家，在旅行与酒店款待行业拥有超过 25 年的经验。",
+      "在其杰出的职业生涯中，Kim 女士成功策划并管理了面向全球客户的国际 MICE 活动、奖励旅游项目、企业会议、教育考察与奢华旅行体验。",
+      "她深厚的行业专业、稳固的供应商关系，以及对卓越服务始终如一的坚持，赢得了全球合作伙伴与利益相关方的信任与信赖。",
+      "Kim 女士以其专业、领导力与对品质的执着而广受赞誉，为每一个项目注入战略性且以客户为中心的思维。她的愿景是将 KWS 打造为值得信赖、勇于创新的目的地管理伙伴，提供地道的韩国体验与世界一流的旅行解决方案。"
+    ],
+    "expertiseTitle": "我们的专长",
+    "expertiseItems": [
+      { "title": "MICE 解决方案", "text": "专业策划与管理会议、奖励、大会及展览。" },
+      { "title": "企业活动", "text": "为企业会议、高管项目与商务活动提供全面的活动管理服务。" },
+      { "title": "奖励旅游", "text": "旨在激励、奖赏并启发参与者的定制旅行体验。" },
+      { "title": "教育项目", "text": "量身定制的教育考察、学术交流与学生旅行项目。" },
+      { "title": "奢华旅行", "text": "配备高端住宿、VIP 服务与独特体验的专属个性化行程。" },
+      { "title": "文化体验", "text": "展现韩国丰富遗产、文化、传统与生活方式的地道项目。" },
+      { "title": "团队与散客服务", "text": "为团队及独立旅客提供全面的旅行安排。" },
+      { "title": "产业考察与技术参访", "text": "提供接触韩国领先产业、机构与创新领域机会的专项项目。" }
+    ],
+    "ctaTitle": "为您编织专属的韩国故事",
+    "ctaSubtitle": "与熟知半岛每一处山谷、餐桌与潮汐的顾问对话。",
+    "ctaButton": "立即联系我们"
+  },
+  "FAQPage": {
+    "eyebrow": "支持",
+    "title": "常见问题",
+    "subtitle": "在将旅程托付给我们之前，您需要了解的一切。找不到答案？我们的顾问将在 24 小时内回复。",
+    "items": [
+      {
+        "question": "您们是否同时服务独立旅客和旅行社？",
+        "answer": "是的。我们是服务这两大群体的首选门户。对于 B2B 合作伙伴（旅行社、企业策划者），我们提供全面的地接、MICE 物流与白牌服务。对于独立旅客，我们打造量身定制的奢华行程，确保畅顺而地道的韩国体验。"
+      },
+      {
+        "question": "您们如何满足清真、纯素、犹太洁食等饮食需求？",
+        "answer": "我们以对饮食需求的细致关注而自豪。我们在韩国各地拥有精选的认证清真、高端纯素及特色餐厅网络。您的专属旅行顾问将确保所有餐饮体验严格符合您的饮食要求，同时不减损韩国美食的丰富底蕴。"
+      },
+      {
+        "question": "您们与哪些级别的酒店合作？",
+        "answer": "我们的产品聚焦高端住宿，涵盖从高档四星级精品酒店到全球知名的五星级奢华酒店。我们亦为希望获得沉浸式文化体验并兼顾现代舒适的旅客，提供高端传统韩屋的专属住宿。"
+      },
+      {
+        "question": "您们的行程套餐通常包含哪些内容？",
+        "answer": "标准包含项目通常涵盖高端住宿、豪华车辆私人接送、专业英语向导服务（其他语言可应要求提供）、精选景点门票，以及部分餐饮体验。国际机票与个人开支一般不包含在内。"
+      },
+      {
+        "question": "我可以完全定制我的行程吗？",
+        "answer": "当然可以。虽然我们提供由专家精心设计的预设行程，但定制才是我们的专长。无论您希望聚焦韩流文化、医疗康养、历史探索，还是兼而有之，我们的顾问都会为您量身调整每一处细节 —— 从节奏到具体兴趣 —— 打造真正个性化的旅程。"
+      }
+    ],
+    "stillHaveQuestionsTitle": "还有疑问吗？",
+    "stillHaveQuestionsText": "无论您是独立旅客还是合作伙伴旅行社，我们的团队都将助您胸有成竹地规划旅程。",
+    "contactTeam": "联系我们的团队"
+  },
+  "ContactPage": {
+    "heroTitle": "与我们一起规划您的下一场旅程。",
+    "heroSubtitle": "值得信赖的向导、灵活的套餐与地道的韩国体验正等待着您。立即联系我们。",
+    "contactInformation": "联系信息",
+    "companyLabel": "公司",
+    "companyName": "KOREA DMC – KOREA WITH SUE (KWS)",
+    "addressLabel": "地址",
+    "addressValue": "韩国首尔特别市麻浦区麻浦大路 44，珍岛大厦 802 室",
+    "addressValue2": "邮编 04174，韩国首尔",
+    "contactPersonLabel": "联系人",
+    "contactPersonName": "Sue Kim",
+    "contactPersonTitle": "首席执行官",
+    "phoneLabel": "电话",
+    "phoneMobile": "手机：+82 10 6425 9313",
+    "phoneTel": "座机：+82 2 703 9313",
+    "emailLabel": "电子邮箱",
+    "websiteLabel": "网站",
+    "followOurJourneys": "关注我们的旅程",
+    "mapLabel": "KOREA DMC – KOREA WITH SUE (KWS)，首尔麻浦区"
+  },
+  "ContactForm": {
+    "nameLabel": "姓名 / 旅行社名称",
+    "namePlaceholder": "请输入您的姓名或旅行社名称",
+    "emailLabel": "电子邮箱地址",
+    "emailPlaceholder": "请输入您的电子邮箱地址",
+    "phoneLabel": "电话号码",
+    "phonePlaceholder": "请输入您的电话号码",
+    "inquiryLabel": "咨询类型",
+    "inquirySelect": "请选择一个选项",
+    "inquiryOptions": {
+      "leisure": "休闲旅行",
+      "mice": "MICE（会议、奖励、大会、展览）",
+      "medical": "医疗旅游",
+      "custom": "定制行程",
+      "partnership": "B2B 合作"
+    },
+    "messageLabel": "您的留言",
+    "messagePlaceholder": "告诉我们您理想中的韩国之旅……",
+    "submit": "提交咨询",
+    "sending": "发送中…",
+    "success": "感谢您 —— 我们的旅行顾问将在 24 小时内与您联系。",
+    "error": "出现问题，请重试。"
   }
 }

@@ -114,10 +114,9 @@ export default function HomePage() {
             title={t("services.title")}
             subtitle={t("services.subtitle")}
           />
-          {/* Note: CategoryCard data itself will need to be translated next! */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {categories.map((category) => (
-              <CategoryCard key={category.title} category={category} />
+              <CategoryCard key={category.key} category={category} />
             ))}
           </div>
         </div>
