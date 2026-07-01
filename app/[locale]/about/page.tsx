@@ -65,7 +65,7 @@ export default function AboutPage() {
                 />
                 <div className="relative w-full h-[420px] md:h-[600px] rounded overflow-hidden shadow-soft-lg">
                   <Image
-                    src="/assets/stitch/about-teahouse.jpg"
+                    src="/assets/stitch/about-temple.jpg"
                     alt="Elegant Korean teahouse interior with warm sunlight through paper screens"
                     fill
                     sizes="(max-width: 1024px) 100vw, 50vw"

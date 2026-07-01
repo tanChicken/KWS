@@ -115,7 +115,7 @@ export default function HomePage() {
             subtitle={t("services.subtitle")}
           />
           {/* Note: CategoryCard data itself will need to be translated next! */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {categories.map((category) => (
               <CategoryCard key={category.title} category={category} />
             ))}
@@ -153,7 +153,7 @@ export default function HomePage() {
             />
             <div className="relative h-[480px] lg:h-[600px] rounded overflow-hidden shadow-soft-lg">
               <Image
-                src="/assets/stitch/about-tea-ceremony.jpg"
+                src="/assets/stitch/about-teahouse.jpg"
                 alt={t("whyChooseUs.altTeaCeremony")}
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
