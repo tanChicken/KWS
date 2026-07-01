@@ -23,7 +23,7 @@ export default function CategoryCard({ category }: CategoryCardProps) {
       <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent" />
       <div className="absolute bottom-0 left-0 p-6 w-full">
         <div className="w-10 h-10 rounded-full bg-surface/15 backdrop-blur-sm flex items-center justify-center mb-3 text-secondary-fixed">
-          <Icon name={category.icon} className="text-[20px]" />
+          {/* <Icon name={category.icon} className="text-[20px]" /> */}
         </div>
         <h3 className="font-display text-headline-sm text-on-primary mb-1">
           {category.title}

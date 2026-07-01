@@ -1,6 +1,5 @@
 export interface Category {
   title: string;
-  icon: string;
   image: string;
   imageAlt: string;
   description: string;
@@ -8,45 +7,59 @@ export interface Category {
 
 export const categories: Category[] = [
   {
-    title: "Leisure Tours",
-    icon: "beach_access",
+    title: "MICE Solutions",
     image: "/assets/stitch/hero-palace.jpg",
     imageAlt: "Korean palace at golden hour",
-    description: "Bespoke leisure itineraries blending culture, luxury, and unseen locales.",
+    description: "Professional planning and management of meetings, incentives, conferences, and exhibitions.",
   },
   {
-    title: "Adventure",
-    icon: "hiking",
+    title: "Corporate Events",
+    // icon: "hiking",
     image: "/assets/stitch/tour-highland-mobile.jpg",
     imageAlt: "Highland trails of Gangwon-do",
-    description: "Highland treks, coastal trails, and four-season outdoor escapes.",
+    description: "Comprehensive event management services for corporate meetings, executive programs, and business events.",
   },
   {
-    title: "Corporate & MICE",
-    icon: "business_center",
+    title: "Incentive Travel",
+    // icon: "business_center",
     image: "/assets/stitch/service-mice.jpg",
     imageAlt: "Corporate MICE event in Seoul",
-    description: "Meetings, incentives, conferences, and exhibitions executed to the minute.",
+    description: "Customized travel experiences designed to motivate, reward, and inspire participants.",
   },
   {
-    title: "Wellness Retreats",
-    icon: "spa",
+    title: "Educational Programs",
+    // icon: "spa",
     image: "/assets/stitch/tour-jeju-wellness.jpg",
     imageAlt: "Jeju Island coastline",
-    description: "Restorative journeys through spas, temples, and volcanic island calm.",
+    description: "Tailor-made educational tours, academic exchanges, and student travel programs.",
   },
   {
-    title: "Medical Tourism",
-    icon: "health_and_safety",
+    title: "Luxury Travel",
+    // icon: "health_and_safety",
     image: "/assets/stitch/service-medical.jpg",
     imageAlt: "Premium medical tourism services",
-    description: "World-class clinics paired with discreet, fully managed recovery stays.",
+    description: "Exclusive and personalized itineraries featuring premium accommodations, VIP services, and unique experiences.",
   },
   {
-    title: "VIP & Concierge",
-    icon: "diamond",
+    title: "Cultural Experiences",
+    // icon: "diamond",
     image: "/assets/stitch/service-vip.jpg",
     imageAlt: "Premium concierge welcome amenities",
-    description: "Private jets, after-hours access, and white-glove personal service.",
+    description: "Authentic programs showcasing Korea's rich heritage, culture, traditions, and lifestyle.",
   },
+  {
+    title: "Group & FIT Services",
+    // icon: "diamond",
+    image: "/assets/stitch/service-vip.jpg",
+    imageAlt: "Premium concierge welcome amenities",
+    description: "Comprehensive travel arrangements for groups and independent travelers.",
+  },
+  {
+    title: "Technical & Industry Visits",
+    // icon: "diamond",
+    image: "/assets/stitch/service-vip.jpg",
+    imageAlt: "Premium concierge welcome amenities",
+    description: "Specialized programs providing access to Korea's leading industries, institutions, and innovation sectors.",
+  },
+  
 ];
