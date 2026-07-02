@@ -146,11 +146,7 @@ export default function HomePage() {
             </div>
           </div>
           <div className="relative hidden lg:block">
-            <div
-              className="absolute -inset-4 border border-primary/10 rounded translate-x-4 translate-y-4"
-              aria-hidden="true"
-            />
-            <div className="relative h-full min-h-[480px] lg:min-h-[600px] rounded overflow-hidden shadow-soft-lg">
+            <div className="relative h-full min-h-[480px] lg:min-h-[600px]">
               <Image
                 src="/assets/stitch/about-teahouse.jpg"
                 alt={t("whyChooseUs.altTeaCeremony")}
