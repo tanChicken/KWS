@@ -124,7 +124,7 @@ export default function HomePage() {
 
       {/* Why Choose Us */}
       <section className="max-w-container mx-auto px-5 md:px-20 py-20 md:py-section-gap">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-stretch">
           <div>
             <SectionHeader
               eyebrow={t("whyChooseUs.eyebrow")}
@@ -150,7 +150,7 @@ export default function HomePage() {
               className="absolute -inset-4 border border-primary/10 rounded translate-x-4 translate-y-4"
               aria-hidden="true"
             />
-            <div className="relative h-[480px] lg:h-[600px] rounded overflow-hidden shadow-soft-lg">
+            <div className="relative h-full min-h-[480px] lg:min-h-[600px] rounded overflow-hidden shadow-soft-lg">
               <Image
                 src="/assets/stitch/about-teahouse.jpg"
                 alt={t("whyChooseUs.altTeaCeremony")}
