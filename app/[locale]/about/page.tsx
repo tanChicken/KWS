@@ -51,7 +51,7 @@ export default function AboutPage() {
       </section>
 
       {/* Company story */}
-      <section className="py-20 md:py-32 bg-background">
+      <section className="py-20 md:py-32 bg-background relative z-20 -mt-[1px]">
         <div className="max-w-container mx-auto px-5 md:px-20">
           <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
             <div className="lg:w-1/2 w-full space-y-8">

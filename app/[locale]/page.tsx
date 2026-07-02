@@ -146,10 +146,10 @@ export default function HomePage() {
             </div>
           </div>
           <div className="relative hidden lg:block">
-            <div
+            {/* <div
               className="absolute -inset-4 border border-primary/10 rounded translate-x-4 translate-y-4"
               aria-hidden="true"
-            />
+            /> */}
             <div className="relative h-[480px] lg:h-[600px] rounded overflow-hidden shadow-soft-lg">
               <Image
                 src="/assets/stitch/about-teahouse.jpg"
