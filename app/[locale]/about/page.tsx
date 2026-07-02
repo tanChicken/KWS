@@ -66,11 +66,11 @@ export default function AboutPage() {
               </div>
             </div>
             <div className="lg:w-1/2 w-full">
-              {/* <div className="relative"> */}
-                <div
+              <div className="relative">
+                {/* <div
                   className="absolute -inset-4 border border-primary/10 rounded translate-x-4 translate-y-4"
                   aria-hidden="true"
-                />
+                /> */}
                 <div className="relative w-full h-[420px] md:h-[600px] rounded overflow-hidden shadow-soft-lg">
                   <Image
                     src="/assets/stitch/about-temple.jpg"
@@ -80,7 +80,7 @@ export default function AboutPage() {
                     className="object-cover"
                   />
                 </div>
-              {/* </div> */}
+              </div>
             </div>
           </div>
         </div>
