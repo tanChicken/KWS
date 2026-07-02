@@ -132,7 +132,12 @@
   "ToursPage": {
     "title": "Our Tour Programs",
     "subtitle": "Experience Korea beyond the guidebook. We design handpicked itineraries that blend local secrets with iconic landmarks. With limited group sizes, we ensure you don’t just visit—you connect.",
-    "showing": "Showing {count} exclusive experiences"
+    "showing": "Showing {count} exclusive experiences",
+    "customCta": {
+      "title": "Craft Your Own Korea Journey",
+      "subtitle": "Don't see the perfect fit? Every program above is just a starting point. Share your interests, pace, and dates, and our local experts will design, curate, and fully customise a tour made just for you.",
+      "button": "Design My Tour"
+    }
   },
   "TourDetailPage": {
     "home": "Home",
