@@ -28,9 +28,9 @@ export const metadata: Metadata = {
   description:
     "KWS DMC Korea is a premium Destination Management Company crafting bespoke leisure tours, MICE programs, wellness retreats, and VIP experiences across South Korea.",
   icons: {
-    icon: "/assets/stitch/kws-logo.png",
-    shortcut: "/assets/stitch/kws-logo.png",
-    apple: "/assets/stitch/kws-logo.png",
+    icon: "/assets/stitch/kws-favi.png",
+    shortcut: "/assets/stitch/kws-favi.png",
+    apple: "/assets/stitch/kws-favi.png",
   },
 };
 
