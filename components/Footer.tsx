@@ -1,7 +1,9 @@
 import { Link } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import Icon from "./Icon";
+import InstagramIcon from "@/components/icons/InstagramIcon";
+import FacebookIcon from "@/components/icons/FacebookIcon";
+import EmailIcon from "@/components/icons/EmailIcon";
 
 export default function Footer() {
   const t = useTranslations("Footer");
@@ -42,25 +44,29 @@ export default function Footer() {
           </p>
           <div className="flex gap-4">
             <a
-              href="#"
+              href="https://www.instagram.com/kwsdmckorea/"
+              target="_blank"
+              rel="noopener noreferrer"
               aria-label="Instagram"
               className="w-10 h-10 rounded-full border border-surface-variant/30 flex items-center justify-center text-surface-variant hover:text-secondary-fixed hover:border-secondary-fixed transition-colors"
             >
-              <Icon name="photo_camera" className="text-[20px]" />
+              <InstagramIcon className="w-5 h-5" />
             </a>
             <a
-              href="#"
-              aria-label="YouTube"
+              href="https://www.facebook.com/profile.php?id=61591516255212"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
               className="w-10 h-10 rounded-full border border-surface-variant/30 flex items-center justify-center text-surface-variant hover:text-secondary-fixed hover:border-secondary-fixed transition-colors"
             >
-              <Icon name="play_circle" className="text-[20px]" />
+              <FacebookIcon className="w-5 h-5" />
             </a>
             <a
               href="mailto:kws@koreawithsue.co.kr"
               aria-label="Email us"
               className="w-10 h-10 rounded-full border border-surface-variant/30 flex items-center justify-center text-surface-variant hover:text-secondary-fixed hover:border-secondary-fixed transition-colors"
             >
-              <Icon name="mail" className="text-[20px]" />
+              <EmailIcon className="w-5 h-5" />
             </a>
           </div>
         </div>

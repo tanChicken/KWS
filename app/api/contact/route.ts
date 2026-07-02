@@ -74,9 +74,11 @@ export async function POST(request: Request) {
   const port = Number(SMTP_PORT);
   const transporter = nodemailer.createTransport({
     host: SMTP_HOST,
-    port,
-    secure: port === 465, // 465 = implicit TLS; 587/others use STARTTLS
-    auth: { user: SMTP_USER, pass: SMTP_PASS },
+    port: port,
+    secure: false, // 465 = implicit TLS; 587/others use STARTTLS
+    requireTLS: true, // STARTTLS is required for non-implicit TLS ports
+    auth: { user: process.env.SMTP_USER, pass: process.env.SMTP_PASS },
+    tls: {ciphers: 'DEFAULT@SECLEVEL=1'},
   });
 
   const inquiryLabel = INQUIRY_LABELS[inquiryType] ?? inquiryType;

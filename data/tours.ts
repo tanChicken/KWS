@@ -108,7 +108,7 @@ export const tours: Tour[] = [
   {
     slug: "k-wave-hallyu-experience",
     title: "K-Wave Hallyu Experience",
-    image: "/assets/stitch/seoul-night.jpg",
+    image: "/assets/stitch/k-wave.jpg",
     imageAlt:
       "Neon-lit Seoul street at night in the Hongdae entertainment district",
     duration: "6 Days / 5 Nights",
@@ -146,7 +146,7 @@ export const tours: Tour[] = [
   {
     slug: "korea-educational-program",
     title: "Korea Educational Program — University & Industry",
-    image: "/assets/stitch/service-curated.jpg",
+    image: "/assets/stitch/educational.jpg",
     imageAlt: "Students and visitors exploring a Korean cultural site",
     duration: "7 Days / 6 Nights",
     route: "Seoul • Gyeonggi",
@@ -158,7 +158,7 @@ export const tours: Tour[] = [
   {
     slug: "winter-korea-ski-snow",
     title: "Winter Korea — Ski & Snow Festival",
-    image: "/assets/stitch/tour-winter.jpg",
+    image: "/assets/stitch/ski-resort.jpg",
     imageAlt:
       "Snow-covered ski resort slopes in Pyeongchang at twilight with glowing cabins",
     duration: "6 Days / 5 Nights",
@@ -171,7 +171,7 @@ export const tours: Tour[] = [
   {
     slug: "korea-culinary-journey",
     title: "Korea Culinary Journey",
-    image: "/assets/stitch/about-tea-ceremony.jpg",
+    image: "/assets/stitch/food.png",
     imageAlt:
       "Traditional Korean tea and regional dishes arranged in a sunlit setting",
     duration: "6 Days / 5 Nights",
@@ -303,7 +303,7 @@ export const tourDetails: Record<string, TourDetail> = {
 
   "k-wave-hallyu-experience": {
     ...tours[2],
-    heroImage: "/assets/stitch/seoul-night.jpg",
+    heroImage: "/assets/stitch/k-wave.jpg",
     cta: { title: "Ready to live the K-Wave?", ...tailoredCta },
     itinerary: [
       {
@@ -444,7 +444,7 @@ export const tourDetails: Record<string, TourDetail> = {
 
   "korea-educational-program": {
     ...tours[5],
-    heroImage: "/assets/stitch/service-curated.jpg",
+    heroImage: "/assets/stitch/educational.jpg",
     cta: { title: "Planning a study or exchange program?", ...tailoredCta },
     itinerary: [
       {
@@ -507,7 +507,7 @@ export const tourDetails: Record<string, TourDetail> = {
 
   "winter-korea-ski-snow": {
     ...tours[6],
-    heroImage: "/assets/stitch/tour-winter.jpg",
+    heroImage: "/assets/stitch/ski-resort.jpg",
     cta: { title: "Ready to hit the slopes?", ...tailoredCta },
     itinerary: [
       {
@@ -561,7 +561,7 @@ export const tourDetails: Record<string, TourDetail> = {
 
   "korea-culinary-journey": {
     ...tours[7],
-    heroImage: "/assets/stitch/about-tea-ceremony.jpg",
+    heroImage: "/assets/stitch/food.png",
     cta: { title: "Hungry to taste Korea?", ...tailoredCta },
     itinerary: [
       {

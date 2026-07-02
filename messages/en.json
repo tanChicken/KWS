@@ -15,8 +15,8 @@
   "HomePage": {
     "bestSelling": {
       "eyebrow": "Curated Experiences",
-      "title": "Best Selling Tours",
-      "subtitle": "Exclusive journeys designed for the discerning traveler. Limited spots. Maximum impressions.",
+      "title": "Our Tour Programs",
+      "subtitle": "Explore our range of tours designed for every travel style.",
       "viewAll": "View All Tours"
     },
     "services": {
@@ -130,8 +130,8 @@
     "Bestseller": "Bestseller"
   },
   "ToursPage": {
-    "title": "Best Selling Tours",
-    "subtitle": "Discover why thousands choose our handpicked journeys. Limited spots. Maximum impressions.",
+    "title": "Our Tour Programs",
+    "subtitle": "Experience Korea beyond the guidebook. We design handpicked itineraries that blend local secrets with iconic landmarks. With limited group sizes, we ensure you don’t just visit—you connect.",
     "showing": "Showing {count} exclusive experiences"
   },
   "TourDetailPage": {

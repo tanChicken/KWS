@@ -4,6 +4,10 @@ import { useTranslations } from "next-intl";
 import ContactForm from "@/components/ContactForm";
 import Icon from "@/components/Icon";
 import GoogleMap from "@/components/GoogleMap";
+// Import your custom icon components
+import InstagramIcon from "@/components/icons/InstagramIcon";
+import FacebookIcon from "@/components/icons/FacebookIcon";
+import EmailIcon from "@/components/icons/EmailIcon";
 
 export async function generateMetadata({
   params,
@@ -15,10 +19,11 @@ export async function generateMetadata({
   return { title: t("heroTitle"), description: t("heroSubtitle") };
 }
 
+// We define the socials with the icon components directly
 const socials = [
-  { icon: "photo_camera", label: "Instagram" },
-  { icon: "play_circle", label: "YouTube" },
-  { icon: "work", label: "LinkedIn" },
+  { icon: <InstagramIcon className="w-5 h-5" />, label: "Instagram", href: "https://www.instagram.com/kwsdmckorea/" },
+  { icon: <FacebookIcon className="w-5 h-5" />, label: "Facebook", href: "https://www.facebook.com/profile.php?id=61591516255212" },
+  { icon: <EmailIcon className="w-5 h-5" />, label: "Email", href: "mailto:kws@koreawithsue.co.kr" }
 ];
 
 export default function ContactPage() {
@@ -103,7 +108,7 @@ export default function ContactPage() {
 
                 {/* Email */}
                 <div className="flex items-start space-x-4">
-                  <Icon name="mail" className="text-secondary mt-1" />
+                  <EmailIcon className="text-secondary mt-1 w-6 h-6" />
                   <div>
                     <p className="text-label-caps uppercase tracking-[0.1em] font-bold text-primary mb-1">
                       {t("emailLabel")}
@@ -141,15 +146,18 @@ export default function ContactPage() {
                   </div>
                 </div>
 
-                <div className="flex space-x-4">
+                {/* Socials Section */}
+                <div className="flex space-x-4 pt-4">
                   {socials.map((social) => (
                     <a
                       key={social.label}
-                      href="#"
+                      href={social.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       aria-label={social.label}
                       className="w-10 h-10 rounded-full bg-surface flex items-center justify-center text-primary hover:text-secondary hover:shadow-soft transition-all"
                     >
-                      <Icon name={social.icon} className="text-[20px]" />
+                      {social.icon}
                     </a>
                   ))}
                 </div>
@@ -163,12 +171,8 @@ export default function ContactPage() {
           </div>
         </div>
 
-        {/* Map (full-width row below the form) */}
+        {/* Map */}
         <div className="mt-gutter grid grid-cols-1 lg:grid-cols-12 gap-gutter">
-          {/* Location map (Google Maps Embed API).
-              👉 EDIT THE COORDINATES BELOW to point the pin at your exact
-              office. In Google Maps, right-click the spot and click the
-              "37.5419, 126.9498" value at the top to copy the latitude, longitude. */}
           <div className="lg:col-span-12 h-[380px] lg:h-[460px] rounded-xl overflow-hidden border border-surface-variant shadow-soft-lg">
             <GoogleMap
               lat={37.53996165086879}
