@@ -91,6 +91,7 @@
     "links": {
       "home": "Home",
       "tours": "Tours",
+      "blog": "Blog",
       "about": "About Us",
       "faq": "FAQ",
       "contact": "Contact"
@@ -98,6 +99,19 @@
     "contactUs": "Contact Us",
     "planMyTrip": "Plan My Trip",
     "language": "Language"
+  },
+  "BlogPage": {
+    "title": "Travel Stories & Insights",
+    "subtitle": "Explore the hidden gems, cultural traditions, and unforgettable journeys across South Korea, curated by experts who live and breathe the local heritage.",
+    "featured": "Featured Story",
+    "readMore": "Read More",
+    "readStory": "Read Story",
+    "empty": "New stories are on their way. Check back soon."
+  },
+  "BlogPostPage": {
+    "backToBlog": "Back to Blog",
+    "minRead": "{minutes} min read",
+    "continueJourney": "Continue Your Journey"
   },
   "Footer": {
     "address": "#802 Jindo Bldg., Mapo-Daero 44, Mapo-Gu, Seoul, Korea 04174 Seoul, Republic of Korea",

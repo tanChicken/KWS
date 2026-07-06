@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Beyond the Hanbok | Korea with Sue</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&amp;family=Manrope:wght@300;400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container": "#f0eded",
+                    "tertiary": "#2b2c29",
+                    "inverse-primary": "#b0cdbb",
+                    "on-primary": "#ffffff",
+                    "on-secondary-fixed": "#281900",
+                    "secondary": "#755a2c",
+                    "primary-container": "#2d4739",
+                    "surface-container-low": "#f6f3f2",
+                    "surface-bright": "#fcf9f8",
+                    "surface": "#fcf9f8",
+                    "secondary-container": "#fdd79f",
+                    "primary-fixed-dim": "#b0cdbb",
+                    "error-container": "#ffdad6",
+                    "on-error": "#ffffff",
+                    "inverse-on-surface": "#f3f0ef",
+                    "on-surface": "#1c1b1b",
+                    "primary-fixed": "#ccead6",
+                    "primary": "#173124",
+                    "on-primary-fixed-variant": "#324c3e",
+                    "error": "#ba1a1a",
+                    "on-tertiary": "#ffffff",
+                    "on-surface-variant": "#424844",
+                    "secondary-fixed-dim": "#e5c18a",
+                    "on-tertiary-container": "#afaeaa",
+                    "background": "#fcf9f8",
+                    "tertiary-fixed": "#e4e2dd",
+                    "on-primary-fixed": "#062014",
+                    "inverse-surface": "#313030",
+                    "surface-variant": "#e5e2e1",
+                    "on-tertiary-fixed-variant": "#474744",
+                    "on-primary-container": "#98b5a3",
+                    "on-secondary-container": "#785c2f",
+                    "surface-container-highest": "#e5e2e1",
+                    "on-background": "#1c1b1b",
+                    "tertiary-fixed-dim": "#c8c6c2",
+                    "on-secondary": "#ffffff",
+                    "surface-dim": "#dcd9d9",
+                    "outline": "#727973",
+                    "surface-tint": "#496455",
+                    "on-secondary-fixed-variant": "#5b4217",
+                    "tertiary-container": "#41423f",
+                    "surface-container-lowest": "#ffffff",
+                    "secondary-fixed": "#ffdead",
+                    "on-tertiary-fixed": "#1b1c19",
+                    "surface-container-high": "#eae7e7",
+                    "outline-variant": "#c2c8c2",
+                    "on-error-container": "#93000a"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "max-width": "1280px",
+                    "gutter": "24px",
+                    "margin-mobile": "20px",
+                    "margin-desktop": "80px",
+                    "base": "8px"
+            },
+            "fontFamily": {
+                    "display-lg": ["Playfair Display"],
+                    "body-lg": ["Manrope"],
+                    "body-md": ["Manrope"],
+                    "headline-md": ["Playfair Display"],
+                    "label-caps": ["Manrope"],
+                    "headline-sm": ["Playfair Display"],
+                    "display-lg-mobile": ["Playfair Display"]
+            },
+            "fontSize": {
+                    "display-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "label-caps": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "700"}],
+                    "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                    "display-lg-mobile": ["36px", {"lineHeight": "1.2", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .text-gradient-gold {
+            background: linear-gradient(135deg, #755a2c 0%, #e5c18a 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .parallax-hero {
+            background-attachment: fixed;
+        }
+        ::selection {
+            background-color: #2d4739;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md selection:bg-primary-container selection:text-on-primary">
+<!-- Header / TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md border-b border-outline-variant/30 h-20 transition-all duration-300">
+<div class="max-w-max-width mx-auto px-margin-desktop h-full flex justify-between items-center">
+<div class="flex items-center gap-4">
+<img alt="Korea with Sue Logo" class="h-12 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4xezjL54ALd2x3HnzOj0KFOB2bePL9WNiy9miw5n3irbwBpTNyxP6f2oNWPb6i3NOsPhynJGiZfi_nwuAZgSUFjmfOs508b3AN8lpzM59ZoGF9Un2QC1agDZDgt-VCIQp5d4xnwMDPclvO-5mZIdM63Pwb0BL9H8vd6yoIwJbo1DYMDwamdHF-bsXgTjvVb5sIk7kZylLd66ias0qHv9ByuvODx4JRzVzepSUs3v30fsgoF2VHYpF9A_v0h5kA3Y3PbeddVLqw6M"/>
+<span class="font-display-lg text-headline-sm text-primary tracking-tight">Korea with Sue</span>
+</div>
+<nav class="hidden md:flex gap-8 items-center">
+<a class="font-body-md text-body-md uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors" href="#">Home</a>
+<a class="font-body-md text-body-md uppercase tracking-wider text-primary font-bold border-b-2 border-primary pb-1" href="#">Tours</a>
+<a class="font-body-md text-body-md uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors" href="#">MICE</a>
+<a class="font-body-md text-body-md uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors" href="#">About Us</a>
+<button class="ml-4 px-8 py-3 bg-primary text-on-primary font-bold uppercase tracking-widest text-xs hover:bg-primary-container transition-all duration-300">
+                    Book Now
+                </button>
+</nav>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<main class="pt-20">
+<!-- Cinematic Hero -->
+<section class="pt-32 pb-16 bg-surface border-b border-outline-variant/20">
+<div class="max-w-3xl mx-auto px-margin-mobile text-center">
+<span class="inline-block px-4 py-1 bg-secondary text-on-secondary font-label-caps text-label-caps mb-6 uppercase tracking-widest">
+      Cultural Immersion
+    </span>
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg mb-4 text-primary">
+      Beyond the Hanbok
+    </h1>
+<p class="font-headline-sm text-headline-sm italic mb-8 text-on-surface-variant">
+      Deep Diving into Joseon Dynasty Traditions
+    </p>
+<div class="flex items-center justify-center gap-4 font-label-caps text-label-caps tracking-widest opacity-80 uppercase text-on-surface-variant">
+<span>By Sue Kim</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>May 15, 2024</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>12 Min Read</span>
+</div>
+</div>
+</section>
+<!-- Editorial Content -->
+<article class="py-24 max-w-[800px] mx-auto px-margin-mobile md:px-0"><div class="max-w-xl mx-auto space-y-12">
+<p class="font-body-lg text-body-lg text-on-surface leading-relaxed first-letter:text-7xl first-letter:font-display-lg first-letter:mr-3 first-letter:float-left first-letter:text-primary">
+    The Joseon Dynasty, spanning five centuries, was the bedrock of Korean identity. While many visitors today experience this history through a rented Hanbok and a quick palace photo, the soul of Joseon lies deeper within the Confucian philosophies that dictated every structural beam and every pour of tea.
+  </p>
+<div class="py-4">
+<h2 class="font-headline-md text-headline-md text-primary mb-6">The Architecture of Harmony</h2>
+<p class="text-on-surface-variant leading-relaxed mb-8">
+      Joseon architecture was never meant to dominate the landscape. Instead, it followed the principle of 'baesanimsu' (mountain behind and water in front). Walking through the courtyard of Gyeongbokgung, one notices how the rooflines mimic the silhouette of Mount Bugaksan in the distance.
+    </p>
+<img class="w-full h-auto object-cover mb-4" data-alt="Intricate Dancheong woodwork" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6CvHKS-HcW7Lba57rDJ9XUcPhpmFJKovonLnRAnw8o6p06SVZscraNRVeNMF5sGUnWrN3lK1wKED_Z_yq4G5gV30ClqdDUSb31U4ljTzd7kH1okhyShqFW_sJ3ALyrLFJXQxlM07Ee8qFfrXAdJrm5p4d2F-8agrzDMrohKv5yyQxcKfQFWQCgmFcE6aTozehzUEGudhkBNOeT4x0KZ6lEzlFNjCnvGEUozhFtng6HbYk_MsP4AEupGo1TSjCnxsOTjdZVP4Sg88"/>
+<p class="text-xs font-label-caps text-on-surface-variant text-center tracking-widest uppercase">Intricate Dancheong patterns representing cosmic order</p>
+</div>
+<div class="py-4">
+<h2 class="font-headline-md text-headline-md text-primary mb-6">The Ritual of Stillness: Tea Ceremonies</h2>
+<p class="text-on-surface-variant leading-relaxed mb-8">
+      Darye, the traditional Korean tea ceremony, was a meditative practice favored by royalty and scholars alike. Unlike the rigid structure of other East Asian tea traditions, Joseon Darye emphasized ease and naturalness. The focus was on the five senses: the sound of water boiling, the warmth of the celadon bowl, and the subtle floral notes of fermented tea.
+    </p>
+<img class="w-full h-auto object-cover mb-4" data-alt="Traditional tea setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnahYBc5CzqGTHyZJybnt80WVb0oZ0PFi6hVzQHcX5A6NndUzR8j1QqnehQdYDIgeHbPrAI1vCtjJfFK7n4sTRZ5jVnDi3zFwSIuu35FK3icU3zFJIJWzhNssqkbUETPXXe7VTZ8PPzhaJaodqUiSVa_c06NEcq02FqrhG_Uxu8-G1HyJ9LjypN3hdr6GQuRrsChVvCsO4bTL3w38ilNYvonjdxNEjitJ59V42nAN1nkQFmOjpWz14PVd6agXG5HYB6ltmrs3E-9w"/>
+<p class="text-xs font-label-caps text-on-surface-variant text-center uppercase">The scholar's tea setting</p>
+<p class="text-on-surface-variant leading-relaxed mt-8">
+      To truly experience Korea, one must slow down to the pace of Joseon. It is in the long shadows of the palace at dusk and the quiet cooling of a tea bowl where the real story begins.
+    </p>
+</div>
+</div></article>
+<!-- Newsletter CTA -->
+<section class="bg-surface-container-low py-20 mb-20">
+<div class="max-w-xl mx-auto px-margin-mobile text-center">
+<h2 class="font-display-lg text-headline-md mb-4 text-primary">Join Our Journey</h2>
+<p class="font-body-md text-on-surface-variant mb-8">
+      Subscribe for exclusive insights into Korean culture and luxury travel itineraries.
+    </p>
+<form class="flex flex-col gap-4">
+<input class="w-full bg-surface border border-outline-variant/30 px-6 py-3 text-on-surface focus:ring-1 focus:ring-primary focus:border-primary outline-none transition-all placeholder:text-on-surface-variant/50" placeholder="Your email address" type="email"/>
+<button class="w-full py-3 bg-primary text-on-primary font-bold uppercase tracking-widest text-xs hover:bg-primary-container transition-all">
+        Subscribe
+      </button>
+</form>
+</div>
+</section>
+<!-- Continue Your Journey Section -->
+<section class="max-w-max-width mx-auto px-margin-desktop pb-32"><div class="border-t border-outline-variant/20 pt-16">
+<h3 class="font-headline-sm text-primary mb-8 text-center">Continue Your Journey</h3>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="group cursor-pointer">
+<h4 class="font-label-caps text-secondary uppercase tracking-widest mb-2">Travel &amp; Innovation</h4>
+<p class="font-headline-sm text-on-surface group-hover:text-primary transition-colors text-lg">The Future of MICE Travel</p>
+</div>
+<div class="group cursor-pointer">
+<h4 class="font-label-caps text-secondary uppercase tracking-widest mb-2">Hidden Gems</h4>
+<p class="font-headline-sm text-on-surface group-hover:text-primary transition-colors text-lg">Hidden Coastal Villages</p>
+</div>
+<div class="group cursor-pointer">
+<h4 class="font-label-caps text-secondary uppercase tracking-widest mb-2">Behind the Scenes</h4>
+<p class="font-headline-sm text-on-surface group-hover:text-primary transition-colors text-lg">VIP Concierge Stories</p>
+</div>
+</div>
+</div></section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest border-t border-outline-variant/20 py-20">
+<div class="max-w-max-width mx-auto px-margin-desktop flex flex-col md:flex-row justify-between items-start gap-12">
+<div class="max-w-sm">
+<img alt="KWS Logo" class="h-16 w-auto mb-6" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4xezjL54ALd2x3HnzOj0KFOB2bePL9WNiy9miw5n3irbwBpTNyxP6f2oNWPb6i3NOsPhynJGiZfi_nwuAZgSUFjmfOs508b3AN8lpzM59ZoGF9Un2QC1agDZDgt-VCIQp5d4xnwMDPclvO-5mZIdM63Pwb0BL9H8vd6yoIwJbo1DYMDwamdHF-bsXgTjvVb5sIk7kZylLd66ias0qHv9ByuvODx4JRzVzepSUs3v30fsgoF2VHYpF9A_v0h5kA3Y3PbeddVLqw6M"/>
+<p class="font-body-md text-on-surface-variant leading-relaxed mb-8">
+                    Curating timeless journeys through the heart and soul of Korea. From royal heritage to modern marvels, we bridge the gap with elegance and expertise.
+                </p>
+<div class="flex gap-6">
+<a class="text-primary hover:opacity-70 transition-opacity" href="#"><span class="material-symbols-outlined">public</span></a>
+<a class="text-primary hover:opacity-70 transition-opacity" href="#"><span class="material-symbols-outlined">share</span></a>
+<a class="text-primary hover:opacity-70 transition-opacity" href="#"><span class="material-symbols-outlined">mail</span></a>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-16">
+<div>
+<h5 class="font-label-caps text-primary uppercase mb-6">Company</h5>
+<ul class="space-y-4 font-body-md text-on-surface-variant">
+<li><a class="hover:text-primary transition-colors" href="#">Tours</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">MICE</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">About Us</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Contact</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-label-caps text-primary uppercase mb-6">Support</h5>
+<ul class="space-y-4 font-body-md text-on-surface-variant">
+<li><a class="hover:text-primary transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Terms of Service</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Instagram</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="max-w-max-width mx-auto px-margin-desktop mt-20 pt-8 border-t border-outline-variant/10 text-center">
+<p class="font-label-caps text-[10px] text-on-surface-variant tracking-[0.2em] uppercase opacity-70">
+                © 2024 Korea with Sue. All rights reserved. Crafted for the discerning traveler.
+            </p>
+</div>
+</footer>
+<!-- Micro-interaction Script -->
+<script>
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('shadow-sm');
+                header.classList.remove('h-20');
+                header.classList.add('h-16');
+            } else {
+                header.classList.remove('shadow-sm');
+                header.classList.remove('h-16');
+                header.classList.add('h-20');
+            }
+        });
+    </script>
+</body></html>

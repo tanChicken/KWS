@@ -95,7 +95,7 @@ export const tours: Tour[] = [
   {
     slug: "korea-grand-classic",
     title: "Korea Grand Classic — Seoul, Jeonju & Busan",
-    image: "/assets/stitch/hero-seoul.jpg",
+    image: "/assets/stitch/grand-classic.webp",
     imageAlt: "Seoul city skyline at dusk with mountains in the distance",
     duration: "8 Days / 7 Nights",
     route: "Seoul • Jeonju • Gyeongju • Busan",
@@ -108,7 +108,7 @@ export const tours: Tour[] = [
   {
     slug: "k-wave-hallyu-experience",
     title: "K-Wave Hallyu Experience",
-    image: "/assets/stitch/k-wave.jpg",
+    image: "/assets/stitch/summer-concert.jpg",
     imageAlt:
       "Neon-lit Seoul street at night in the Hongdae entertainment district",
     duration: "6 Days / 5 Nights",

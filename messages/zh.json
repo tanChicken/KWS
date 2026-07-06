@@ -91,6 +91,7 @@
     "links": {
       "home": "首页",
       "tours": "行程",
+      "blog": "博客",
       "about": "关于我们",
       "faq": "常见问题",
       "contact": "联系我们"
@@ -98,6 +99,19 @@
     "contactUs": "联系我们",
     "planMyTrip": "规划我的行程",
     "language": "语言"
+  },
+  "BlogPage": {
+    "title": "旅行故事与洞察",
+    "subtitle": "由深谙在地文化的专家精心策划，探索韩国各地的隐藏瑰宝、文化传统与难忘旅程。",
+    "featured": "精选故事",
+    "readMore": "阅读全文",
+    "readStory": "阅读故事",
+    "empty": "新故事正在路上，敬请期待。"
+  },
+  "BlogPostPage": {
+    "backToBlog": "返回博客",
+    "minRead": "阅读时长 {minutes} 分钟",
+    "continueJourney": "继续您的旅程"
   },
   "Footer": {
     "address": "韩国首尔特别市麻浦区麻浦大路44，珍岛大厦802室 (邮编: 04174)",

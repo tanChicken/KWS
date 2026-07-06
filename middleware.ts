@@ -5,10 +5,12 @@ export default createMiddleware(routing);
  
 export const config = {
   // Matcher ignores internal Next.js files (_next, api, assets, etc.)
-  // and applies routing language prefixes to all page paths
+  // and applies routing language prefixes to all page paths.
+  // `admin` is excluded so the TinaCMS dashboard (public/admin) is served
+  // without a locale prefix.
   matcher: [
-    "/", 
+    "/",
     "/(en|ko|zh)/:path*",
-    "/((?!api|_next|_vercel|.*\\..*).*)"
+    "/((?!api|admin|_next|_vercel|.*\\..*).*)"
   ]
 };
