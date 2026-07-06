@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 import { getTranslations } from "next-intl/server";
 import { useTranslations } from "next-intl";
 import FAQAccordion from "@/components/FAQAccordion";
