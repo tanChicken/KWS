@@ -112,7 +112,7 @@ export default function ContactForm() {
         <textarea
           id="contact-message"
           name="message"
-          rows={10}
+          rows={5}
           required
           placeholder={t("messagePlaceholder")}
           className={`${fieldClasses} resize-y`}
