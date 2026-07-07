@@ -108,7 +108,7 @@ export const tours: Tour[] = [
   {
     slug: "k-wave-hallyu-experience",
     title: "K-Wave Hallyu Experience",
-    image: "/assets/stitch/summer-concert.jpg",
+    image: "/assets/stitch/k-wave.jpg",
     imageAlt:
       "Neon-lit Seoul street at night in the Hongdae entertainment district",
     duration: "6 Days / 5 Nights",
@@ -248,7 +248,7 @@ export const tourDetails: Record<string, TourDetail> = {
 
   "korea-grand-classic": {
     ...tours[1],
-    heroImage: "/assets/stitch/hero-seoul.jpg",
+    heroImage: "/assets/stitch/grand-classic.webp",
     cta: { title: "Ready for the grand circuit?", ...tailoredCta },
     itinerary: [
       {
