@@ -7,6 +7,7 @@ import ReactMarkdown, { type Components } from "react-markdown";
 import remarkGfm from "remark-gfm";
 import Icon from "@/components/Icon";
 import { getAllPosts, getPostBySlug } from "@/lib/blog";
+import ImageGallery from "@/components/ImageGallery"; // <-- Imported our new Client Component
 
 interface BlogPostPageProps {
   params: Promise<{ locale: string; slug: string }>;
@@ -173,6 +174,11 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
               {post.content}
             </ReactMarkdown>
           </article>
+
+          {/* 👇 Our interactive image carousel/lightbox 👇 */}
+          {post.gallery && post.gallery.length > 0 && (
+             <ImageGallery gallery={post.gallery} title={post.title} />
+          )}
 
           {/* Continue your journey */}
           {morePosts.length > 0 && (

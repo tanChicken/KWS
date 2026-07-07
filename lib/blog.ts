@@ -10,6 +10,7 @@ export interface BlogPostMeta {
   date: string;
   featuredImage: string;
   description: string;
+  gallery?: { src: string; alt?: string }[];
 }
 
 export interface BlogPost extends BlogPostMeta {
@@ -42,6 +43,7 @@ function parsePostFile(fileName: string): BlogPost {
     date: data.date ? new Date(data.date).toISOString() : "",
     featuredImage: data.featured_image ?? "",
     description: data.description ?? "",
+    gallery: data.gallery ?? [],
     content,
   };
 }

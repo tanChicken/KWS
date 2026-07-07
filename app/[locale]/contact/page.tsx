@@ -23,7 +23,7 @@ export async function generateMetadata({
 const socials = [
   { icon: <InstagramIcon className="w-5 h-5" />, label: "Instagram", href: "https://www.instagram.com/kwsdmckorea/" },
   { icon: <FacebookIcon className="w-5 h-5" />, label: "Facebook", href: "https://www.facebook.com/profile.php?id=61591516255212" },
-  { icon: <EmailIcon className="w-5 h-5" />, label: "Email", href: "mailto:kws@koreawithsue.co.kr" }
+  { icon: <EmailIcon className="w-5 h-5" />, label: "Email", href: "mailto:admin@koreawithsue.co.kr" }
 ];
 
 export default function ContactPage() {
@@ -77,7 +77,7 @@ export default function ContactPage() {
                 </div>
 
                 {/* Contact Person */}
-                <div className="flex items-start space-x-4">
+                {/* <div className="flex items-start space-x-4">
                   <Icon name="person" className="text-secondary mt-1" />
                   <div>
                     <p className="text-label-caps uppercase tracking-[0.1em] font-bold text-primary mb-1">
@@ -89,7 +89,7 @@ export default function ContactPage() {
                       {t("contactPersonTitle")}
                     </p>
                   </div>
-                </div>
+                </div> */}
 
                 {/* Phone */}
                 <div className="flex items-start space-x-4">
@@ -99,8 +99,8 @@ export default function ContactPage() {
                       {t("phoneLabel")}
                     </p>
                     <p className="text-body-md text-on-surface-variant">
-                      {t("phoneMobile")}
-                      <br />
+                      {/* {t("phoneMobile")} */}
+                      {/* <br /> */}
                       {t("phoneTel")}
                     </p>
                   </div>
@@ -114,17 +114,17 @@ export default function ContactPage() {
                       {t("emailLabel")}
                     </p>
                     <a
-                      href="mailto:kws@koreawithsue.co.kr"
+                      href="mailto:admin@koreawithsue.co.kr"
                       className="text-body-md text-on-surface-variant hover:text-secondary transition-colors block mb-1"
                     >
-                      kws@koreawithsue.co.kr
+                      admin@koreawithsue.co.kr
                     </a>
-                    <a
+                    {/* <a
                       href="mailto:sue@koreawithsue.co.kr"
                       className="text-body-md text-on-surface-variant hover:text-secondary transition-colors block"
                     >
                       sue@koreawithsue.co.kr
-                    </a>
+                    </a> */}
                   </div>
                 </div>
 

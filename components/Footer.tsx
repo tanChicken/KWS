@@ -32,11 +32,11 @@ export default function Footer() {
         <div className="md:col-span-2 space-y-6">
           <Link href="/" className="inline-block">
             <Image
-              src="/assets/stitch/logo.png"
+              src="/assets/stitch/2.png"
               alt="KWS DMC Korea logo"
-              width={160}
+              width={180}
               height={64}
-              className="h-16 w-auto object-contain brightness-0 invert"
+              className="h-full w-auto object-contain brightness-0 invert"
             />
           </Link>
           <p className="text-body-md text-surface-variant max-w-sm">
@@ -62,7 +62,7 @@ export default function Footer() {
               <FacebookIcon className="w-5 h-5" />
             </a>
             <a
-              href="mailto:kws@koreawithsue.co.kr"
+              href="mailto:admin@koreawithsue.co.kr"
               aria-label="Email us"
               className="w-10 h-10 rounded-full border border-surface-variant/30 flex items-center justify-center text-surface-variant hover:text-secondary-fixed hover:border-secondary-fixed transition-colors"
             >

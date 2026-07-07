@@ -70,6 +70,30 @@ export default defineConfig({
             required: true,
           },
           {
+            type: "object",
+            list: true,
+            name: "gallery",
+            label: "Image Gallery",
+            ui: {
+              itemProps: (item) => {
+                return { label: item?.alt || 'New Image' };
+              },
+            },
+            fields: [
+              {
+                type: "image",
+                name: "src",
+                label: "Image",
+                required: true,
+              },
+              {
+                type: "string",
+                name: "alt",
+                label: "Alt Text",
+              },
+            ],
+          },
+          {
             type: "string",
             name: "description",
             label: "Description",

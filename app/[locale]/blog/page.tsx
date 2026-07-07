@@ -31,7 +31,7 @@ export default async function BlogPage({ params }: BlogPageProps) {
       {/* Hero */}
       <section className="relative h-[420px] md:h-[520px] flex items-center justify-center overflow-hidden">
         <Image
-          src="/assets/stitch/hero-palace.jpg"
+          src="/assets/stitch/blog-hero.jpg"
           alt=""
           fill
           priority
