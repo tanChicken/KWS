@@ -17,13 +17,13 @@ export default function Footer() {
         { label: t("columns.company.faq"), href: "/faq" },
       ],
     },
-    {
-      heading: t("columns.legal.heading"),
-      links: [
-        { label: t("columns.legal.terms"), href: "/contact" },
-        { label: t("columns.legal.privacy"), href: "/contact" },
-      ],
-    },
+    // {
+    //   heading: t("columns.legal.heading"),
+    //   links: [
+    //     { label: t("columns.legal.terms"), href: "/contact" },
+    //     { label: t("columns.legal.privacy"), href: "/contact" },
+    //   ],
+    // },
   ];
 
   return (
