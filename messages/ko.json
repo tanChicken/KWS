@@ -100,6 +100,19 @@
     "planMyTrip": "여행 계획하기",
     "language": "언어"
   },
+  "BlogPage": {
+    "title": "여행 이야기와 인사이트",
+    "subtitle": "현지의 유산을 몸소 체험하며 살아가는 전문가들이 엄선한, 대한민국 곳곳에 숨겨진 보석 같은 장소와 문화적 전통, 그리고 잊지 못할 여정을 만나보세요.",
+    "featured": "추천 스토리",
+    "readMore": "더 읽기",
+    "readStory": "스토리 읽기",
+    "empty": "새로운 이야기가 곧 찾아옵니다. 곧 다시 확인해 주세요."
+  },
+  "BlogPostPage": {
+    "backToBlog": "블로그로 돌아가기",
+    "minRead": "{minutes}분 소요",
+    "continueJourney": "여정 계속하기"
+  },
   "Footer": {
     "address": "대한민국 서울특별시 마포구 마포대로 44, 진도빌딩 802호 (우: 04174)",
     "columns": {
