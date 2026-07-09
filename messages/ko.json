@@ -100,19 +100,6 @@
     "planMyTrip": "여행 계획하기",
     "language": "언어"
   },
-  "BlogPage": {
-    "title": "여행 이야기 & 인사이트",
-    "subtitle": "현지 문화를 누구보다 잘 아는 전문가들이 전하는 대한민국 곳곳의 숨은 명소, 문화 전통, 그리고 잊지 못할 여정을 만나보세요.",
-    "featured": "추천 스토리",
-    "readMore": "더 보기",
-    "readStory": "스토리 읽기",
-    "empty": "새로운 이야기를 준비 중입니다. 곧 다시 찾아와 주세요."
-  },
-  "BlogPostPage": {
-    "backToBlog": "블로그로 돌아가기",
-    "minRead": "{minutes}분 소요",
-    "continueJourney": "여정 이어가기"
-  },
   "Footer": {
     "address": "대한민국 서울특별시 마포구 마포대로 44, 진도빌딩 802호 (우: 04174)",
     "columns": {
@@ -120,6 +107,7 @@
         "heading": "회사 소개",
         "about": "회사 소개",
         "tours": "투어 둘러보기",
+        "blog": "블로그",
         "faq": "자주 묻는 질문"
       },
       "legal": {

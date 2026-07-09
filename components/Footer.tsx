@@ -72,8 +72,8 @@ export default function Footer() {
         </div>
 
         {footerColumns.map((col) => (
-          <div key={col.heading}>
-            <h4 className="text-label-caps uppercase tracking-[0.15em] font-bold text-secondary-fixed mb-6">
+          <div key={col.heading} className="md:col-start-4">
+            <h4 className="text-lg uppercase tracking-[0.15em] font-bold text-secondary-fixed mb-6">
               {col.heading}
             </h4>
             <ul className="space-y-4">
@@ -81,7 +81,7 @@ export default function Footer() {
                 <li key={link.label}>
                   <Link
                     href={link.href as any}
-                    className="text-body-md text-surface-variant hover:text-secondary-fixed transition-colors duration-200"
+                    className="text-lg text-surface-variant hover:text-secondary-fixed transition-colors duration-200"
                   >
                     {link.label}
                   </Link>
