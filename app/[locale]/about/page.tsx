@@ -73,11 +73,11 @@ export default function AboutPage() {
                 /> */}
                 <div className="relative w-full h-[420px] md:h-[600px] rounded overflow-hidden shadow-soft-lg">
                   <Image
-                    src="/assets/stitch/about-park.jpg"
+                    src="/assets/stitch/2.png"
                     alt={t("storyImageAlt")}
                     fill
                     sizes="(max-width: 1024px) 100vw, 50vw"
-                    className="object-cover"
+                    className="object-contain"
                   />
                 </div>
               </div>

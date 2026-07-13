@@ -141,7 +141,7 @@ export default function ContactPage() {
                       rel="noopener noreferrer"
                       className="text-body-md text-on-surface-variant hover:text-secondary transition-colors block"
                     >
-                      www.koreawithsue.com
+                      https://www.koreawithsue.com
                     </a>
                   </div>
                 </div>
